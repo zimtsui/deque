@@ -1,3 +1,5 @@
+import assert from 'assert';
+
 const constructor = () => {
     const publ = {};
 
@@ -27,12 +29,15 @@ const constructor = () => {
         if (front + num > rear) throw new Error('no enough elements');
         front += num;
         shrink();
+        assert(front + front <= rear);
         return publ;
     };
 
     publ.clear = () => {
         front = rear;
         shrink();
+        assert(front + front <= rear);
+        return publ;
     };
 
     publ.getFront = () => {
@@ -52,13 +57,14 @@ const constructor = () => {
     publ.shiftWhile = (pred) => {
         for (; front < rear && pred(vector[front]); front += 1);
         shrink();
+        assert(front + front <= rear);
         return publ;
     };
 
     publ.takeRearWhile = (pred) => {
         let i;
         for (i = rear; i > front && pred(vector[i - 1]); i -= 1);
-        return vector.slice(i, rear);
+        return vector.slice(i, rear).reverse();
     };
 
     publ.takeFrontWhile = (pred) => {
@@ -67,9 +73,11 @@ const constructor = () => {
         return vector.slice(front, i);
     };
 
-    publ[Symbol.iterator] = function* getIterator() {
-        for (let i = front; i < rear; i += 1) yield vector[i];
-    };
+    // publ[Symbol.iterator] = function* getIterator() {
+    //     for (let i = front; i < rear; i += 1) yield vector[i];
+    // };
+
+    publ[Symbol.iterator] = () => vector.slice(front, rear)[Symbol.iterator]();
 
     return publ;
 };
