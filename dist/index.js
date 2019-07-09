@@ -11,7 +11,7 @@ require("source-map-support/register");
 
 var _assert = _interopRequireDefault(require("assert"));
 
-var constructor = function constructor() {
+var Queue = function Queue() {
   var publ = {};
   var vector;
   var front;
@@ -109,8 +109,6 @@ var constructor = function constructor() {
   return publ;
 };
 
-var _default = {
-  constructor: constructor
-};
+var _default = Queue;
 exports["default"] = _default;
 //# sourceMappingURL=index.js.map

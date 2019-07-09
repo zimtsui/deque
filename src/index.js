@@ -1,6 +1,6 @@
 import assert from 'assert';
 
-const constructor = () => {
+const Queue = () => {
     const publ = {};
 
     let vector;
@@ -82,6 +82,4 @@ const constructor = () => {
     return publ;
 };
 
-export default {
-    constructor,
-};
+export default Queue;
