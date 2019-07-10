@@ -41,12 +41,12 @@ const Queue = () => {
     };
 
     publ.getFront = () => {
-        if (front == rear) throw new Error('getting front of an empty queue.');
+        if (front === rear) throw new Error('getting front of an empty queue.');
         return vector[front];
     };
 
     publ.getRear = () => {
-        if (front == rear) throw new Error('getting front of an empty queue.');
+        if (front === rear) throw new Error('getting front of an empty queue.');
         return vector[rear - 1];
     };
 
