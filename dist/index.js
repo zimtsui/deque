@@ -54,12 +54,12 @@ var Queue = function Queue() {
   };
 
   publ.getFront = function () {
-    if (front == rear) throw new Error('getting front of an empty queue.');
+    if (front === rear) throw new Error('getting front of an empty queue.');
     return vector[front];
   };
 
   publ.getRear = function () {
-    if (front == rear) throw new Error('getting front of an empty queue.');
+    if (front === rear) throw new Error('getting front of an empty queue.');
     return vector[rear - 1];
   };
 
