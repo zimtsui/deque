@@ -15,5 +15,5 @@ test('test 1', t => {
     assert(q.frontElem === 5);
     assert(q.rearElem === 8);
     assert.deepStrictEqual(q.takeFrontWhile(x => x < 8), [5, 6, 7]);
-    assert.deepStrictEqual(q.takeRearWhile(x => x > 5), [8, 7, 6]);
+    assert.deepStrictEqual(q.takeRearWhile(x => x > 5), [6, 7, 8]);
 });

@@ -55,7 +55,7 @@ class Queue<T> {
     takeRearWhile(pred: (x: T) => boolean): T[] {
         let i: number;
         for (i = this.rear; i > this.front && pred(this.vector[i - 1]); i -= 1);
-        return this.vector.slice(i, this.rear).reverse();
+        return this.vector.slice(i, this.rear);
     }
 
     takeFrontWhile(pred: (x: T) => boolean): T[] {

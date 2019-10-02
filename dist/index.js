@@ -58,7 +58,7 @@ class Queue {
         let i;
         for (i = this.rear; i > this.front && pred(this.vector[i - 1]); i -= 1)
             ;
-        return this.vector.slice(i, this.rear).reverse();
+        return this.vector.slice(i, this.rear);
     }
     takeFrontWhile(pred) {
         let i;

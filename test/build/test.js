@@ -19,6 +19,6 @@ ava_1.default('test 1', t => {
     assert_1.default(q.frontElem === 5);
     assert_1.default(q.rearElem === 8);
     assert_1.default.deepStrictEqual(q.takeFrontWhile(x => x < 8), [5, 6, 7]);
-    assert_1.default.deepStrictEqual(q.takeRearWhile(x => x > 5), [8, 7, 6]);
+    assert_1.default.deepStrictEqual(q.takeRearWhile(x => x > 5), [6, 7, 8]);
 });
 //# sourceMappingURL=test.js.map

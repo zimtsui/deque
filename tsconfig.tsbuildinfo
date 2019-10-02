@@ -130,7 +130,7 @@
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
       "/home/zim/queue/src/index.ts": {
-        "version": "4788202fafc82f6483f18dcf4287e347b3cde353bf380eb8a8be37789e2aab82",
+        "version": "fa453d2d352f626a6349f32981fe67e8a1965314c88a4fc8b2188e5594cd0ec7",
         "signature": "08c2d0ddc692aac55667c7955a27ce98671c4f881faed785cd07da0cfaa37cde"
       },
       "/home/zim/queue/node_modules/@types/events/index.d.ts": {
@@ -1202,6 +1202,7 @@
       "/home/zim/queue/node_modules/typescript/lib/lib.es2019.symbol.d.ts",
       "/home/zim/queue/node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "/home/zim/queue/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
+      "/home/zim/queue/src/index.ts",
       "/home/zim/queue/node_modules/@types/events/index.d.ts",
       "/home/zim/queue/node_modules/@types/node/globals.d.ts",
       "/home/zim/queue/node_modules/@types/node/assert.d.ts",
@@ -1248,8 +1249,7 @@
       "/home/zim/queue/node_modules/@types/node/ts3.2/globals.d.ts",
       "/home/zim/queue/node_modules/@types/node/ts3.2/index.d.ts",
       "/home/zim/queue/node_modules/@types/minimatch/index.d.ts",
-      "/home/zim/queue/node_modules/@types/glob/index.d.ts",
-      "/home/zim/queue/src/index.ts"
+      "/home/zim/queue/node_modules/@types/glob/index.d.ts"
     ]
   },
   "version": "3.5.3"
