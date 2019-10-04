@@ -1,11 +1,11 @@
-class Queue<T> {
-    public length: number = 0;
+class Queue<T> implements ArrayLike<T>, Iterable<T> {
+    public length = <number>{};
     [index: number]: T;
-    public push(...elems: T[]): number { return <number>{}; }
-    public shift(num = 1): this { return <this>{}; }
-    public shiftWhile(pred: (x: T) => boolean): this { return <this>{}; }
+    public push(...elems: T[]) { return <number>{}; }
+    public shift(num = 1) { return <this>{}; }
+    public shiftWhile(pred: (x: T) => boolean) { return <this>{}; }
     public [Symbol.iterator]() { return <Iterator<T>>{}; }
-    public clear(): this { return <this>{}; }
+    public clear() { return <this>{}; }
 
     constructor() {
         return new Proxy<Queue<T>>(new InternalQueue<T>(), {

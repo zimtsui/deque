@@ -1,4 +1,4 @@
-declare class Queue<T> {
+declare class Queue<T> implements ArrayLike<T>, Iterable<T> {
     length: number;
     [index: number]: T;
     push(...elems: T[]): number;

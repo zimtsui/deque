@@ -130,8 +130,8 @@
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
       "/home/zim/queue/src/index.ts": {
-        "version": "6f7b91cd79ffd05073fc09ef8ac2ec926d744d12362d3bec64a9a517b88a3222",
-        "signature": "b667413fa21c93af773d71a4893e1952f7e063294cddcfdeedb68561580d8932"
+        "version": "6b1e8c681046abdd2f656f0bc75158c31fdf26ae3213a2098799fc8dbb8e0cc6",
+        "signature": "9f6beae1a85aefc4c638d4387e7aacc3ea4fbfa001035bdd1d2520597008caf8"
       },
       "/home/zim/queue/node_modules/@types/events/index.d.ts": {
         "version": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",

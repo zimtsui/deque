@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class Queue {
     constructor() {
-        this.length = 0;
+        this.length = {};
         return new Proxy(new InternalQueue(), {
             get: function (internalQueue, field, queue) {
                 let subscript;
@@ -77,5 +77,17 @@ class InternalQueue {
         return this.rear - this.front;
     }
 }
+class Haha {
+    constructor() {
+        this.length = {};
+        return new Proxy({}, {
+            get: function () {
+                return 'hahahaha';
+            }
+        });
+    }
+}
+const h = new Haha();
+console.log(h[100]);
 exports.default = Queue;
 //# sourceMappingURL=index.js.map
