@@ -1,14 +1,14 @@
 class Queue<T> implements ArrayLike<T>, Iterable<T> {
     public length = <number>{};
     [index: number]: T;
-    public push(...elems: T[]) { return <number>{}; }
+    public push(...elems: T[]) { return <this>{}; }
     public shift(num = 1) { return <this>{}; }
     public shiftWhile(pred: (x: T) => boolean) { return <this>{}; }
     public [Symbol.iterator]() { return <Iterator<T>>{}; }
     public clear() { return <this>{}; }
 
-    constructor() {
-        return new Proxy<Queue<T>>(new InternalQueue<T>(), {
+    constructor(...elems: T[]) {
+        return new Proxy<Queue<T>>(new InternalQueue<T>(...elems), {
             get: function (
                 internalQueue: InternalQueue<T>,
                 field: string,
@@ -42,6 +42,10 @@ class InternalQueue<T> implements Queue<T> {
     public rear = 0;
     [index: number]: T;
 
+    constructor(...elems: T[]) {
+        this.push(...elems);
+    }
+
     private shrink(): this {
         if (this.front > this.rear - this.front) {
             this.vector = this.vector.slice(this.front, this.rear);
@@ -51,10 +55,10 @@ class InternalQueue<T> implements Queue<T> {
         return this;
     }
 
-    public push(...elems: T[]): number {
+    public push(...elems: T[]): this {
         this.vector.push(...elems);
         this.rear += elems.length;
-        return this.length;
+        return this;
     }
 
     public shift(num = 1): this {

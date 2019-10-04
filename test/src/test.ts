@@ -4,8 +4,7 @@ import assert from 'assert';
 import _ from 'lodash';
 
 test('test 1', t => {
-    const q = new Queue<number>();
-    q.push(1);
+    const q = new Queue<number>(1);
     assert.deepStrictEqual([...q], [1]);
     q.push(2, 3, 4, 5, 6, 7, 8);
     assert.deepStrictEqual([...q], [1, 2, 3, 4, 5, 6, 7, 8]);

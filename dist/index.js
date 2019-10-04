@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Queue {
-    constructor() {
+    constructor(...elems) {
         this.length = {};
-        return new Proxy(new InternalQueue(), {
+        return new Proxy(new InternalQueue(...elems), {
             get: function (internalQueue, field, queue) {
                 let subscript;
                 try {
@@ -34,10 +34,11 @@ class Queue {
     clear() { return {}; }
 }
 class InternalQueue {
-    constructor() {
+    constructor(...elems) {
         this.vector = [];
         this.front = 0;
         this.rear = 0;
+        this.push(...elems);
     }
     shrink() {
         if (this.front > this.rear - this.front) {
@@ -50,7 +51,7 @@ class InternalQueue {
     push(...elems) {
         this.vector.push(...elems);
         this.rear += elems.length;
-        return this.length;
+        return this;
     }
     shift(num = 1) {
         if (this.front + num > this.rear)
@@ -77,17 +78,5 @@ class InternalQueue {
         return this.rear - this.front;
     }
 }
-class Haha {
-    constructor() {
-        this.length = {};
-        return new Proxy({}, {
-            get: function () {
-                return 'hahahaha';
-            }
-        });
-    }
-}
-const h = new Haha();
-console.log(h[100]);
 exports.default = Queue;
 //# sourceMappingURL=index.js.map
