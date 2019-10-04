@@ -130,16 +130,16 @@
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
       "/home/zim/queue/src/index.ts": {
-        "version": "fa453d2d352f626a6349f32981fe67e8a1965314c88a4fc8b2188e5594cd0ec7",
-        "signature": "08c2d0ddc692aac55667c7955a27ce98671c4f881faed785cd07da0cfaa37cde"
+        "version": "6f7b91cd79ffd05073fc09ef8ac2ec926d744d12362d3bec64a9a517b88a3222",
+        "signature": "b667413fa21c93af773d71a4893e1952f7e063294cddcfdeedb68561580d8932"
       },
       "/home/zim/queue/node_modules/@types/events/index.d.ts": {
         "version": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",
         "signature": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935"
       },
       "/home/zim/queue/node_modules/@types/node/globals.d.ts": {
-        "version": "41984c1a67108179630189847e04b2f82d62ccc6e7b3d8fc826bcf8e86770ed4",
-        "signature": "41984c1a67108179630189847e04b2f82d62ccc6e7b3d8fc826bcf8e86770ed4"
+        "version": "4d0e3b8334392a2e0adef9caf867118678fb8f38da90d8003184debd62d30f3b",
+        "signature": "4d0e3b8334392a2e0adef9caf867118678fb8f38da90d8003184debd62d30f3b"
       },
       "/home/zim/queue/node_modules/@types/node/assert.d.ts": {
         "version": "58a52f282f1dad18179023804c1f3a7536bf875748a0a314abd43f60fd5b244f",
@@ -150,12 +150,12 @@
         "signature": "1305b079a057355f496bdde048716189178877a6b4fe0e9267a46af67f8c7561"
       },
       "/home/zim/queue/node_modules/@types/node/buffer.d.ts": {
-        "version": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d",
-        "signature": "fe892fea1e75a442fffb4a604d7eeb451e858787a9f2f01c4e83bf12a3b5048d"
+        "version": "61215c1a376bbe8f51cab4cc4ddbf3746387015113c37a84d981d4738c21b878",
+        "signature": "61215c1a376bbe8f51cab4cc4ddbf3746387015113c37a84d981d4738c21b878"
       },
       "/home/zim/queue/node_modules/@types/node/child_process.d.ts": {
-        "version": "79ff2d695eb86f9862ac05a1833464bf6cb9500aaf3464013821a532f40cee64",
-        "signature": "79ff2d695eb86f9862ac05a1833464bf6cb9500aaf3464013821a532f40cee64"
+        "version": "fbf717914b6e7d87d969b13c646b5d15dca61c9b89ea48e97a1513809445b003",
+        "signature": "fbf717914b6e7d87d969b13c646b5d15dca61c9b89ea48e97a1513809445b003"
       },
       "/home/zim/queue/node_modules/@types/node/cluster.d.ts": {
         "version": "ce629710e5e58724902b753212e97861fd73e2aa09f5d88cb6d55dc763cf8c8a",
@@ -170,16 +170,16 @@
         "signature": "8ce9418c78d3c1fb703ddbe38c936d34a989ba278666979826590dfa0772a424"
       },
       "/home/zim/queue/node_modules/@types/node/crypto.d.ts": {
-        "version": "325154b5b9b94af94b9c0cea4a051496693e6253be1abb2b6399b68331d70e46",
-        "signature": "325154b5b9b94af94b9c0cea4a051496693e6253be1abb2b6399b68331d70e46"
+        "version": "ab2319db789867778ccd5f2b5e6cd559e716d1cd3726b0e03724af463eddf78b",
+        "signature": "ab2319db789867778ccd5f2b5e6cd559e716d1cd3726b0e03724af463eddf78b"
       },
       "/home/zim/queue/node_modules/@types/node/dgram.d.ts": {
-        "version": "b6c6861bccf209a98eeddb99bdb7bd987fb29fc52130d5d9fd2f79d3607a0a7a",
-        "signature": "b6c6861bccf209a98eeddb99bdb7bd987fb29fc52130d5d9fd2f79d3607a0a7a"
+        "version": "7954df44c35d39b851b996fdc1af0a252e4e23f862abfef388a058203bb94c30",
+        "signature": "7954df44c35d39b851b996fdc1af0a252e4e23f862abfef388a058203bb94c30"
       },
       "/home/zim/queue/node_modules/@types/node/dns.d.ts": {
-        "version": "05e732266b5a36789fd9eb846b1f45fec1b6e318b740e3f20fc22fd95f9ebf31",
-        "signature": "05e732266b5a36789fd9eb846b1f45fec1b6e318b740e3f20fc22fd95f9ebf31"
+        "version": "ef226a42de7022eacdfa0f15aabf73b46c47af93044c8ebfab8aa8e3cf6c330c",
+        "signature": "ef226a42de7022eacdfa0f15aabf73b46c47af93044c8ebfab8aa8e3cf6c330c"
       },
       "/home/zim/queue/node_modules/@types/node/domain.d.ts": {
         "version": "d5b7c8819ce1bd31a45f7675309e145ec28e3aa1b60a8e0637fd0e8916255baa",
@@ -190,32 +190,32 @@
         "signature": "0be551fde848d5adde38731272ee980bda2bde0f8bf2a76ce99e01b86985546c"
       },
       "/home/zim/queue/node_modules/@types/node/fs.d.ts": {
-        "version": "92bad5d23e0d21fb6ad4354b2ca8bfe683c1d57e32daca6a88c15fff2ecb9fcd",
-        "signature": "92bad5d23e0d21fb6ad4354b2ca8bfe683c1d57e32daca6a88c15fff2ecb9fcd"
+        "version": "6bd120d96313412155ae7d4766d586a38576a058b3e269be2152db7030fbc882",
+        "signature": "6bd120d96313412155ae7d4766d586a38576a058b3e269be2152db7030fbc882"
       },
       "/home/zim/queue/node_modules/@types/node/http.d.ts": {
-        "version": "cc4cd9d8af7f5689b5df3c91d0fc287fafbd89e6e305183da28a6877a8aa08a8",
-        "signature": "cc4cd9d8af7f5689b5df3c91d0fc287fafbd89e6e305183da28a6877a8aa08a8"
+        "version": "d5470fad800f025be0c4bd1b14c013ea5b4aeec90e53ab0e2703a8fe01f292b3",
+        "signature": "d5470fad800f025be0c4bd1b14c013ea5b4aeec90e53ab0e2703a8fe01f292b3"
       },
       "/home/zim/queue/node_modules/@types/node/http2.d.ts": {
-        "version": "ef535a3849d5826d70b2b341420e239e180d2d9d64045e84683b6a52a82845b5",
-        "signature": "ef535a3849d5826d70b2b341420e239e180d2d9d64045e84683b6a52a82845b5"
+        "version": "745494f14a9e133beee622ca51cdc59c8896ff77c9f3cd017a4ce735b30dac2d",
+        "signature": "745494f14a9e133beee622ca51cdc59c8896ff77c9f3cd017a4ce735b30dac2d"
       },
       "/home/zim/queue/node_modules/@types/node/https.d.ts": {
         "version": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6",
         "signature": "dacbe08610729f6343ea9880ea8e737c6d7a6efa4a318d8f6acaf85db4aceed6"
       },
       "/home/zim/queue/node_modules/@types/node/inspector.d.ts": {
-        "version": "8cfa78f4c052a93ac1e7accb0a78ce331dbd14f277ee0e193279ec31ce7efb25",
-        "signature": "8cfa78f4c052a93ac1e7accb0a78ce331dbd14f277ee0e193279ec31ce7efb25"
+        "version": "4218ced3933a31eed1278d350dd63c5900df0f0904f57d61c054d7a4b83dbe4c",
+        "signature": "4218ced3933a31eed1278d350dd63c5900df0f0904f57d61c054d7a4b83dbe4c"
       },
       "/home/zim/queue/node_modules/@types/node/module.d.ts": {
         "version": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66",
         "signature": "03394bf8deb8781b490ae9266a843fbdf00647947d79e25fcbf1d89a9e9c8a66"
       },
       "/home/zim/queue/node_modules/@types/node/net.d.ts": {
-        "version": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50",
-        "signature": "cc5fac2b9e45a6670b96fd32cb42c97e0d4a7b2ee12c87963c6fe0f55fa84f50"
+        "version": "1224b49e2c8f3b4ed618969d2989412d1282536d2a6a31c30c84d5da01d8b8e4",
+        "signature": "1224b49e2c8f3b4ed618969d2989412d1282536d2a6a31c30c84d5da01d8b8e4"
       },
       "/home/zim/queue/node_modules/@types/node/os.d.ts": {
         "version": "1a6016bd905855b2b45881e9edbd7ab8c7175f8bcbb711ff06989c4bcdc75486",
@@ -230,8 +230,8 @@
         "signature": "27ef4001526ee9d8afa57687a60bb3b59c52b32d29db0a2260094ab64726164f"
       },
       "/home/zim/queue/node_modules/@types/node/process.d.ts": {
-        "version": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389",
-        "signature": "3a8848a9c307429b861402cc69bc472ffe0c05b86474fc158723169161e16389"
+        "version": "0e0d58f5e90c0a270dac052b9c5ad8ccdfc8271118c2105b361063218d528d6e",
+        "signature": "0e0d58f5e90c0a270dac052b9c5ad8ccdfc8271118c2105b361063218d528d6e"
       },
       "/home/zim/queue/node_modules/@types/node/punycode.d.ts": {
         "version": "30ec6f9c683b988c3cfaa0c4690692049c4e7ed7dc6f6e94f56194c06b86f5e1",
@@ -242,36 +242,36 @@
         "signature": "e0070c45bf15b872f58eee948f71ad6f4f424f36330b2477753fc1aed3ece36e"
       },
       "/home/zim/queue/node_modules/@types/node/readline.d.ts": {
-        "version": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c",
-        "signature": "94cf93922adcc9cb4acf11d8d71641af728de919a50ae55d8e83159afea1a42c"
+        "version": "e1045d32a6a59dbcbe0ed2edddc6568221acc299ac68d92284153e7c00b39d51",
+        "signature": "e1045d32a6a59dbcbe0ed2edddc6568221acc299ac68d92284153e7c00b39d51"
       },
       "/home/zim/queue/node_modules/@types/node/repl.d.ts": {
         "version": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157",
         "signature": "65dbe15ed8a8ed5d4707a63868178dc38111cfc06de28a2e50713ca017a9c157"
       },
       "/home/zim/queue/node_modules/@types/node/stream.d.ts": {
-        "version": "2350c09d0121a0b22c386a7bb8436d521b444c6b4b3e6ee37197d08a23f3b9dd",
-        "signature": "2350c09d0121a0b22c386a7bb8436d521b444c6b4b3e6ee37197d08a23f3b9dd"
+        "version": "735c23d34f165346d39c45817cb2557adf5548676687e6afbbf54a6e96731dec",
+        "signature": "735c23d34f165346d39c45817cb2557adf5548676687e6afbbf54a6e96731dec"
       },
       "/home/zim/queue/node_modules/@types/node/string_decoder.d.ts": {
-        "version": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948",
-        "signature": "17e157df6125098a1a34eb4d201ee4ac03bbe97e471ab5627bb2c40fce555948"
+        "version": "7e62aac2cc9c0710d772047ad89e8d7117f52592c791eb995ce1f865fedab432",
+        "signature": "7e62aac2cc9c0710d772047ad89e8d7117f52592c791eb995ce1f865fedab432"
       },
       "/home/zim/queue/node_modules/@types/node/timers.d.ts": {
         "version": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
         "signature": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9"
       },
       "/home/zim/queue/node_modules/@types/node/tls.d.ts": {
-        "version": "5af0062b7d2fcda72a7fd60a7cfbe2a862ec53ffd39af66a02ba967193c4d162",
-        "signature": "5af0062b7d2fcda72a7fd60a7cfbe2a862ec53ffd39af66a02ba967193c4d162"
+        "version": "af5f07deb33b2fb92ef67ea5ebb69670b81c74908b646e7cd4361a331d2a558a",
+        "signature": "af5f07deb33b2fb92ef67ea5ebb69670b81c74908b646e7cd4361a331d2a558a"
       },
       "/home/zim/queue/node_modules/@types/node/trace_events.d.ts": {
         "version": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662",
         "signature": "978aecd2e6bc2ac094e9a35eda98ff8586713857b3655e7c98ca5ed8f7d50662"
       },
       "/home/zim/queue/node_modules/@types/node/tty.d.ts": {
-        "version": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4",
-        "signature": "0fd8dac24f12d9fd1fcc275200dd1b6771072f20331a07b18f7dbcbe20f7d3f4"
+        "version": "08261bfa763b8cd7fa74c06debf70ee22268c299a18e5dc7c48736bc352be007",
+        "signature": "08261bfa763b8cd7fa74c06debf70ee22268c299a18e5dc7c48736bc352be007"
       },
       "/home/zim/queue/node_modules/@types/node/url.d.ts": {
         "version": "1e3da92862604b1f7a32265169f9aa712c4567742d42597704e04ae3e07019e7",
@@ -286,16 +286,16 @@
         "signature": "e98d697adf809fc14dc88ed4e00e4f0e0e381ca23d6d9320cf01af87e801f725"
       },
       "/home/zim/queue/node_modules/@types/node/vm.d.ts": {
-        "version": "040daf5e7603c7468c7c3ed4fe8b5c22cdf1eb4a2ad67dc5c03e51c36ceb8c00",
-        "signature": "040daf5e7603c7468c7c3ed4fe8b5c22cdf1eb4a2ad67dc5c03e51c36ceb8c00"
+        "version": "ad20b1311e55187f8eeefdd282a02dbc70e5ac0cf8ab4cabae99c142b32cc562",
+        "signature": "ad20b1311e55187f8eeefdd282a02dbc70e5ac0cf8ab4cabae99c142b32cc562"
       },
       "/home/zim/queue/node_modules/@types/node/worker_threads.d.ts": {
         "version": "7780573ed8387aaadcc61d87f3d60d77dabf1e060da252dc72ab1d73401988bb",
         "signature": "7780573ed8387aaadcc61d87f3d60d77dabf1e060da252dc72ab1d73401988bb"
       },
       "/home/zim/queue/node_modules/@types/node/zlib.d.ts": {
-        "version": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9",
-        "signature": "f91189e04264b0e41ee96ff96661c3871e739b90156df2f2288da7a81019dcd9"
+        "version": "2ffd50644d73fc1fa59c69d48859b6c843d3604609d7353725b6d2b001f05a2b",
+        "signature": "2ffd50644d73fc1fa59c69d48859b6c843d3604609d7353725b6d2b001f05a2b"
       },
       "/home/zim/queue/node_modules/@types/node/base.d.ts": {
         "version": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce",
@@ -320,6 +320,58 @@
       "/home/zim/queue/node_modules/@types/glob/index.d.ts": {
         "version": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee",
         "signature": "d852d6282c8dc8156d26d6bda83ab4bde51fee05ba2fe0ecdc165ddda009d3ee"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts": {
+        "version": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
+        "signature": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts": {
+        "version": "c21830111d49a5cd7a9f384370db5b41c659d045fe920bcac1cc9f507c88125d",
+        "signature": "c21830111d49a5cd7a9f384370db5b41c659d045fe920bcac1cc9f507c88125d"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts": {
+        "version": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8",
+        "signature": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts": {
+        "version": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+        "signature": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts": {
+        "version": "a3def0c2a275d4680897c8a908920a8a2cdfaee9e1d9053012efc6506e81cdbb",
+        "signature": "a3def0c2a275d4680897c8a908920a8a2cdfaee9e1d9053012efc6506e81cdbb"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts": {
+        "version": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0",
+        "signature": "c2d47e5668f89ed8768d306919c42bb88d50d4029d68f58343141360895cfcc0"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts": {
+        "version": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995",
+        "signature": "65648639567d214f62c1b21d200c852807e68bdb08311f95ab6f526ef5b98995"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts": {
+        "version": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+        "signature": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts": {
+        "version": "c95aec6e01c1b18c75c09d18767352761c00394e4864d4b7dd29386a1728eae9",
+        "signature": "c95aec6e01c1b18c75c09d18767352761c00394e4864d4b7dd29386a1728eae9"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts": {
+        "version": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+        "signature": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts": {
+        "version": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5",
+        "signature": "e34f3f6159b1e23de9bb5521382795aaa5aaed6f53b4702e70a2ec45bc76ddb5"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts": {
+        "version": "c84107ce3522799b7a821463b1743ef230669093b2746afd1e817fcbb5885e67",
+        "signature": "c84107ce3522799b7a821463b1743ef230669093b2746afd1e817fcbb5885e67"
+      },
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts": {
+        "version": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d",
+        "signature": "bbf144d4354e2aaa6439f32761f3ee798cc68d1600adab6e2a596f25269f106d"
       }
     },
     "options": {
@@ -472,7 +524,6 @@
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/home/zim/queue/src/index.ts": [
-        "/home/zim/queue/node_modules/@types/node/assert.d.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -607,6 +658,7 @@
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/home/zim/queue/node_modules/@types/node/process.d.ts": [
+        "/home/zim/queue/node_modules/@types/node/tty.d.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -754,6 +806,214 @@
         "/home/zim/queue/node_modules/@types/node/events.d.ts",
         "/home/zim/queue/node_modules/@types/minimatch/index.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/index.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ]
@@ -1018,6 +1278,7 @@
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/home/zim/queue/node_modules/@types/node/process.d.ts": [
+        "/home/zim/queue/node_modules/@types/node/tty.d.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -1167,6 +1428,214 @@
         "/home/zim/queue/node_modules/@types/node/ts3.2/index.d.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts": [
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+        "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1202,7 +1671,6 @@
       "/home/zim/queue/node_modules/typescript/lib/lib.es2019.symbol.d.ts",
       "/home/zim/queue/node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "/home/zim/queue/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
-      "/home/zim/queue/src/index.ts",
       "/home/zim/queue/node_modules/@types/events/index.d.ts",
       "/home/zim/queue/node_modules/@types/node/globals.d.ts",
       "/home/zim/queue/node_modules/@types/node/assert.d.ts",
@@ -1249,7 +1717,21 @@
       "/home/zim/queue/node_modules/@types/node/ts3.2/globals.d.ts",
       "/home/zim/queue/node_modules/@types/node/ts3.2/index.d.ts",
       "/home/zim/queue/node_modules/@types/minimatch/index.d.ts",
-      "/home/zim/queue/node_modules/@types/glob/index.d.ts"
+      "/home/zim/queue/node_modules/@types/glob/index.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/common.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/array.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/collection.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/date.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/function.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/lang.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/math.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/number.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/object.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+      "/home/zim/queue/src/index.ts"
     ]
   },
   "version": "3.5.3"

@@ -1,9 +1,46 @@
-import assert from 'assert';
-
 class Queue<T> {
-    private vector: T[] = [];
-    private front = 0;
-    private rear = 0;
+    public length: number = 0;
+    [index: number]: T;
+    public push(...elems: T[]): number { return <number>{}; }
+    public shift(num = 1): this { return <this>{}; }
+    public shiftWhile(pred: (x: T) => boolean): this { return <this>{}; }
+    public [Symbol.iterator]() { return <Iterator<T>>{}; }
+    public clear(): this { return <this>{}; }
+
+    constructor() {
+        return new Proxy<Queue<T>>(new InternalQueue<T>(), {
+            get: function (
+                internalQueue: InternalQueue<T>,
+                field: string,
+                queue: Queue<T>,
+            ) {
+                let subscript: number;
+                try {
+                    subscript = Number.parseInt(field);
+                } catch (e) {
+                    subscript = Number.NaN;
+                }
+                if (Number.isInteger(subscript)) {
+                    if (subscript < 0) subscript += internalQueue.length;
+                    return internalQueue.vector[
+                        internalQueue.front + subscript
+                    ];
+                } else {
+                    const returnValue = Reflect.get(
+                        internalQueue, field, internalQueue);
+                    if (returnValue === internalQueue) return queue;
+                    else return returnValue;
+                }
+            }
+        });
+    }
+}
+
+class InternalQueue<T> implements Queue<T> {
+    public vector: T[] = [];
+    public front = 0;
+    public rear = 0;
+    [index: number]: T;
 
     private shrink(): this {
         if (this.front > this.rear - this.front) {
@@ -14,61 +51,36 @@ class Queue<T> {
         return this;
     }
 
-    push(...elems: T[]): this {
+    public push(...elems: T[]): number {
         this.vector.push(...elems);
         this.rear += elems.length;
-        return this;
+        return this.length;
     }
 
-    shift(num = 1): this {
+    public shift(num = 1): this {
         if (this.front + num > this.rear) throw new Error('no enough elements');
         this.front += num;
         this.shrink();
-        assert(this.front + this.front <= this.rear);
         return this;
     }
 
-    clear(): this {
+    public clear(): this {
         this.front = this.rear;
         this.shrink();
-        assert(this.front + this.front <= this.rear);
         return this;
-    }
-
-    get frontElem(): T {
-        if (this.front === this.rear) throw new Error('getting front of an empty queue.');
-        return this.vector[this.front];
-    }
-
-    get rearElem(): T {
-        if (this.front === this.rear) throw new Error('getting front of an empty queue.');
-        return this.vector[this.rear - 1];
     }
 
     shiftWhile(pred: (x: T) => boolean): this {
         for (; this.front < this.rear && pred(this.vector[this.front]); this.front += 1);
         this.shrink();
-        assert(this.front + this.front <= this.rear);
         return this;
     }
 
-    takeRearWhile(pred: (x: T) => boolean): T[] {
-        let i: number;
-        for (i = this.rear; i > this.front && pred(this.vector[i - 1]); i -= 1);
-        return this.vector.slice(i, this.rear);
-    }
-
-    takeFrontWhile(pred: (x: T) => boolean): T[] {
-        let i: number;
-        for (i = this.front; i < this.rear && pred(this.vector[i]); i += 1);
-        return this.vector.slice(this.front, i);
-    }
-
-    [Symbol.iterator]() {
+    public [Symbol.iterator]() {
         return this.vector.slice(this.front, this.rear)[Symbol.iterator]();
     }
 
-    get length() {
+    public get length() {
         return this.rear - this.front;
     }
 }
