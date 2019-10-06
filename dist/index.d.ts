@@ -1,3 +1,5 @@
+declare type Subscript = symbol | string;
+declare function parseInt<T>(x: Subscript): number;
 declare class Queue<T> implements ArrayLike<T>, Iterable<T> {
     length: number;
     [index: number]: T;
@@ -9,3 +11,4 @@ declare class Queue<T> implements ArrayLike<T>, Iterable<T> {
     constructor(...elems: T[]);
 }
 export default Queue;
+export { parseInt, Queue, };

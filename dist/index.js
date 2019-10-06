@@ -1,23 +1,27 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+function parseInt(x) {
+    if (typeof x === 'symbol')
+        throw null;
+    const n = Number.parseInt(x);
+    if (Number.isInteger(n))
+        return n;
+    else
+        throw null;
+}
+exports.parseInt = parseInt;
 class Queue {
     constructor(...elems) {
         this.length = {};
         return new Proxy(new InternalQueue(...elems), {
             get: function (internalQueue, field, queue) {
-                let subscript;
                 try {
-                    subscript = Number.parseInt(field);
-                }
-                catch (e) {
-                    subscript = Number.NaN;
-                }
-                if (Number.isInteger(subscript)) {
+                    let subscript = parseInt(field);
                     if (subscript < 0)
                         subscript += internalQueue.length;
                     return internalQueue.vector[internalQueue.front + subscript];
                 }
-                else {
+                catch (e) {
                     const returnValue = Reflect.get(internalQueue, field, internalQueue);
                     if (returnValue === internalQueue)
                         return queue;
@@ -33,6 +37,7 @@ class Queue {
     [Symbol.iterator]() { return {}; }
     clear() { return {}; }
 }
+exports.Queue = Queue;
 class InternalQueue {
     constructor(...elems) {
         this.vector = [];

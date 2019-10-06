@@ -1,3 +1,11 @@
+type Subscript = symbol | string;
+
+function parseInt<T>(x: Subscript): number {
+    if (typeof x === 'symbol') throw null;
+    const n = Number.parseInt(x);
+    if (Number.isInteger(n)) return n; else throw null;
+}
+
 class Queue<T> implements ArrayLike<T>, Iterable<T> {
     public length = <number>{};
     [index: number]: T;
@@ -11,21 +19,16 @@ class Queue<T> implements ArrayLike<T>, Iterable<T> {
         return new Proxy<Queue<T>>(new InternalQueue<T>(...elems), {
             get: function (
                 internalQueue: InternalQueue<T>,
-                field: string,
+                field: Subscript,
                 queue: Queue<T>,
             ) {
-                let subscript: number;
                 try {
-                    subscript = Number.parseInt(field);
-                } catch (e) {
-                    subscript = Number.NaN;
-                }
-                if (Number.isInteger(subscript)) {
+                    let subscript = parseInt<T>(field);
                     if (subscript < 0) subscript += internalQueue.length;
                     return internalQueue.vector[
                         internalQueue.front + subscript
                     ];
-                } else {
+                } catch (e) {
                     const returnValue = Reflect.get(
                         internalQueue, field, internalQueue);
                     if (returnValue === internalQueue) return queue;
@@ -90,3 +93,7 @@ class InternalQueue<T> implements Queue<T> {
 }
 
 export default Queue;
+export {
+    parseInt,
+    Queue,
+}
