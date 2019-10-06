@@ -1,3 +1,5 @@
+import { boundMethod } from 'autobind-decorator';
+
 type Subscript = symbol | string;
 
 function parseInt<T>(x: Subscript): number {
@@ -16,11 +18,12 @@ class Queue<T> implements ArrayLike<T>, Iterable<T> {
     public clear() { return <this>{}; }
 
     constructor(...elems: T[]) {
-        return new Proxy<Queue<T>>(new InternalQueue<T>(...elems), {
+        const internalQueue = new InternalQueue<T>(...elems);
+        return new Proxy(<Queue<T>>{}, {
             get: function (
-                internalQueue: InternalQueue<T>,
+                target,
                 field: Subscript,
-                receiver: any,
+                receiver: Queue<T>,
             ) {
                 try {
                     let subscript = parseInt<T>(field);
@@ -29,17 +32,22 @@ class Queue<T> implements ArrayLike<T>, Iterable<T> {
                         internalQueue.front + subscript
                     ];
                 } catch (e) {
-                    const returnValue = Reflect.get(
+                    const member = Reflect.get(
                         internalQueue, field, internalQueue);
-                    if (returnValue === internalQueue) return receiver;
-                    else return returnValue;
+                    if (typeof member === 'function')
+                        return function (...args: any[]) {
+                            const returnValue = member(...args);
+                            if (returnValue === internalQueue) return receiver;
+                            else return returnValue;
+                        }
+                    else return member;
                 }
             }
         });
     }
 }
 
-class InternalQueue<T> implements Queue<T> {
+class InternalQueue<T> {
     public vector: T[] = [];
     public front = 0;
     public rear = 0;
@@ -49,6 +57,7 @@ class InternalQueue<T> implements Queue<T> {
         this.push(...elems);
     }
 
+    @boundMethod
     private shrink(): this {
         if (this.front > this.rear - this.front) {
             this.vector = this.vector.slice(this.front, this.rear);
@@ -58,12 +67,14 @@ class InternalQueue<T> implements Queue<T> {
         return this;
     }
 
+    @boundMethod
     public push(...elems: T[]): this {
         this.vector.push(...elems);
         this.rear += elems.length;
         return this;
     }
 
+    @boundMethod
     public shift(num = 1): this {
         if (this.front + num > this.rear) throw new Error('no enough elements');
         this.front += num;
@@ -71,18 +82,21 @@ class InternalQueue<T> implements Queue<T> {
         return this;
     }
 
+    @boundMethod
     public clear(): this {
         this.front = this.rear;
         this.shrink();
         return this;
     }
 
-    shiftWhile(pred: (x: T) => boolean): this {
+    @boundMethod
+    public shiftWhile(pred: (x: T) => boolean): this {
         for (; this.front < this.rear && pred(this.vector[this.front]); this.front += 1);
         this.shrink();
         return this;
     }
 
+    @boundMethod
     public [Symbol.iterator]() {
         return this.vector.slice(this.front, this.rear)[Symbol.iterator]();
     }

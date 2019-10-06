@@ -1,5 +1,12 @@
 "use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+const autobind_decorator_1 = require("autobind-decorator");
 function parseInt(x) {
     if (typeof x === 'symbol')
         throw null;
@@ -13,8 +20,9 @@ exports.parseInt = parseInt;
 class Queue {
     constructor(...elems) {
         this.length = {};
-        return new Proxy(new InternalQueue(...elems), {
-            get: function (internalQueue, field, receiver) {
+        const internalQueue = new InternalQueue(...elems);
+        return new Proxy({}, {
+            get: function (target, field, receiver) {
                 try {
                     let subscript = parseInt(field);
                     if (subscript < 0)
@@ -22,11 +30,17 @@ class Queue {
                     return internalQueue.vector[internalQueue.front + subscript];
                 }
                 catch (e) {
-                    const returnValue = Reflect.get(internalQueue, field, internalQueue);
-                    if (returnValue === internalQueue)
-                        return receiver;
+                    const member = Reflect.get(internalQueue, field, internalQueue);
+                    if (typeof member === 'function')
+                        return function (...args) {
+                            const returnValue = member(...args);
+                            if (returnValue === internalQueue)
+                                return receiver;
+                            else
+                                return returnValue;
+                        };
                     else
-                        return returnValue;
+                        return member;
                 }
             }
         });
@@ -83,5 +97,23 @@ class InternalQueue {
         return this.rear - this.front;
     }
 }
+__decorate([
+    autobind_decorator_1.boundMethod
+], InternalQueue.prototype, "shrink", null);
+__decorate([
+    autobind_decorator_1.boundMethod
+], InternalQueue.prototype, "push", null);
+__decorate([
+    autobind_decorator_1.boundMethod
+], InternalQueue.prototype, "shift", null);
+__decorate([
+    autobind_decorator_1.boundMethod
+], InternalQueue.prototype, "clear", null);
+__decorate([
+    autobind_decorator_1.boundMethod
+], InternalQueue.prototype, "shiftWhile", null);
+__decorate([
+    autobind_decorator_1.boundMethod
+], InternalQueue.prototype, Symbol.iterator, null);
 exports.default = Queue;
 //# sourceMappingURL=index.js.map

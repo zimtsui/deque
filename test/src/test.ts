@@ -3,7 +3,8 @@ import test from 'ava';
 import assert from 'assert';
 import _ from 'lodash';
 
-test('test 1', t => {
+test.serial('test 1', t => {
+    console.log = t.log;
     const q = new Queue<number>(1);
     assert.deepStrictEqual([...q], [1]);
     q.push(2, 3, 4, 5, 6, 7, 8);
