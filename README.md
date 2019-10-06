@@ -29,3 +29,9 @@ there are mutable methods:
 
 these methods above return the queue itself and you can call them in a chain.
 
+# drawbacks
+
+this class is implemented by *Proxy*, so:
+
+1. it cannot be directly extended.
+2. `new Queue() instanceof Queue` returns false.

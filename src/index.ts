@@ -2,8 +2,8 @@ type Subscript = symbol | string;
 
 function parseInt<T>(x: Subscript): number {
     if (typeof x === 'symbol') throw null;
-    const n = Number.parseInt(x);
-    if (Number.isInteger(n)) return n; else throw null;
+    const NATURAL = /^(0$)|-?([1-9]\d*$)/;
+    if (NATURAL.test(x)) return Number.parseInt(x); else throw null;
 }
 
 class Queue<T> implements ArrayLike<T>, Iterable<T> {
@@ -20,7 +20,7 @@ class Queue<T> implements ArrayLike<T>, Iterable<T> {
             get: function (
                 internalQueue: InternalQueue<T>,
                 field: Subscript,
-                queue: Queue<T>,
+                receiver: any,
             ) {
                 try {
                     let subscript = parseInt<T>(field);
@@ -31,7 +31,7 @@ class Queue<T> implements ArrayLike<T>, Iterable<T> {
                 } catch (e) {
                     const returnValue = Reflect.get(
                         internalQueue, field, internalQueue);
-                    if (returnValue === internalQueue) return queue;
+                    if (returnValue === internalQueue) return receiver;
                     else return returnValue;
                 }
             }
