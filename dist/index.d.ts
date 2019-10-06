@@ -11,4 +11,4 @@ declare class Queue<T> implements ArrayLike<T>, Iterable<T> {
     constructor(...elems: T[]);
 }
 export default Queue;
-export { parseInt, Queue, };
+export { parseInt, Queue, Subscript, };
