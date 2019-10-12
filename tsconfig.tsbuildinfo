@@ -133,9 +133,17 @@
         "version": "2de69362c6be41535d58884c066a2b104c9e0e5aab709f35aed8d4e08ead4c95",
         "signature": "2de69362c6be41535d58884c066a2b104c9e0e5aab709f35aed8d4e08ead4c95"
       },
+      "/home/zim/queue/src/queue.ts": {
+        "version": "3464c798c66cfca33587f6b9f2d8e3162f6e392ade8ea9c2317c13917ca86f2d",
+        "signature": "ca6626197c462fb76f7e0668be1ab7af2fe5c755b0b8571431a2add0ca2f6f8b"
+      },
+      "/home/zim/queue/src/negative-subscript.ts": {
+        "version": "8f188999bb41b6b1195340779d6a24c64209e264856ad0292d4df3131e4804e9",
+        "signature": "740055eeaedc88abd8c15f60c5bf46aa3a5e0813d143f287c8966d5ead1866d6"
+      },
       "/home/zim/queue/src/index.ts": {
-        "version": "9eb08c3625b7a214eb3837bb33da6aa8ddb50e065be40ac51a66b8f876caedd7",
-        "signature": "f74441edbdde1b78f0658eb6ff3488233214dcd2cf0e15333d0ad9a6d9ce294c"
+        "version": "5181a6994cec74566645fc3d2a5f677a9466ea0027a7ca7f80e16ee15d7b11aa",
+        "signature": "de442a343ef33e341d1a28b49e8752126befb48b3165dbccc59c208a65ce1b0f"
       },
       "/home/zim/queue/node_modules/@types/events/index.d.ts": {
         "version": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",
@@ -532,8 +540,19 @@
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/zim/queue/src/index.ts": [
+      "/home/zim/queue/src/queue.ts": [
         "/home/zim/queue/node_modules/autobind-decorator/index.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/src/negative-subscript.ts": [
+        "/home/zim/queue/src/queue.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/src/index.ts": [
+        "/home/zim/queue/src/queue.ts",
+        "/home/zim/queue/src/negative-subscript.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -1650,6 +1669,10 @@
         "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/src/index.ts": [
+        "/home/zim/queue/src/queue.ts",
+        "/home/zim/queue/src/negative-subscript.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1746,6 +1769,8 @@
       "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
       "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
       "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
+      "/home/zim/queue/src/queue.ts",
+      "/home/zim/queue/src/negative-subscript.ts",
       "/home/zim/queue/src/index.ts"
     ]
   },
