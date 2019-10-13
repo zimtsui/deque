@@ -75,5 +75,8 @@ class Queue<T> implements ArrayLike<T>, Iterable<T> {
     }
 }
 
-export { Queue };
 export default Queue;
+export {
+    Queue,
+    parseNatural,
+};

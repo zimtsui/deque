@@ -1,3 +1,4 @@
+import parseNatural from './parse-natural';
 declare class Queue<T> implements ArrayLike<T>, Iterable<T> {
     private vector;
     private front;
@@ -12,5 +13,5 @@ declare class Queue<T> implements ArrayLike<T>, Iterable<T> {
     [Symbol.iterator](): IterableIterator<T>;
     readonly length: number;
 }
-export { Queue };
 export default Queue;
+export { Queue, parseNatural, };

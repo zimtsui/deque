@@ -11,6 +11,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const autobind_decorator_1 = require("autobind-decorator");
 const parse_natural_1 = __importDefault(require("./parse-natural"));
+exports.parseNatural = parse_natural_1.default;
 class Queue {
     constructor(...elems) {
         this.vector = [];
