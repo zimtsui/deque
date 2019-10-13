@@ -1,7 +1,17 @@
 import { boundMethod } from 'autobind-decorator';
 import parseNatural from './parse-natural';
 
-class Queue<T> implements ArrayLike<T>, Iterable<T> {
+interface QueueLike<T> extends ArrayLike<T>, Iterable<T> {
+    [index: number]: T;
+    push(...elems: T[]): this;
+    shift(num?: number): this;
+    clear(): this;
+    shiftWhile(pred: (x: T) => boolean): this;
+    [Symbol.iterator](): IterableIterator<T>;
+    length: number;
+}
+
+class Queue<T> implements QueueLike<T> {
     private vector: T[] = [];
     private front = 0;
     private rear = 0;
@@ -78,5 +88,6 @@ class Queue<T> implements ArrayLike<T>, Iterable<T> {
 export default Queue;
 export {
     Queue,
+    QueueLike,
     parseNatural,
 };
