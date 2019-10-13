@@ -1,4 +1,4 @@
-import Queue from '../..';
+import { Queue } from '../..';
 import test from 'ava';
 import assert from 'assert';
 import _ from 'lodash';
