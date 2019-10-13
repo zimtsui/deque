@@ -10,9 +10,8 @@ function parseInt<T>(x: Subscript): number {
 
 class NegativeSubscript<T> extends Queue<T> {
     constructor(...elems: T[]) {
-        super();
-        const queue = new Queue<T>(...elems);
-        return new Proxy(<NegativeSubscript<T>>{}, {
+        super(...elems);
+        return new Proxy(this, {
             get: function (
                 target,
                 field: Subscript,
@@ -20,20 +19,14 @@ class NegativeSubscript<T> extends Queue<T> {
             ) {
                 try {
                     let subscript = parseInt<T>(field);
-                    if (subscript < 0) subscript += queue.length;
-                    return queue.vector[
-                        queue.front + subscript
+                    if (subscript < 0) subscript += target.length;
+                    return target.vector[
+                        target.front + subscript
                     ];
                 } catch (e) {
                     const member = Reflect.get(
-                        queue, field, queue);
-                    if (typeof member === 'function')
-                        return function (...args: any[]) {
-                            const returnValue = member(...args);
-                            if (returnValue === queue) return receiver;
-                            else return returnValue;
-                        }
-                    else return member;
+                        target, field, receiver);
+                    return member;
                 }
             }
         });

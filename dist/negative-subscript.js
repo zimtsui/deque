@@ -16,28 +16,18 @@ function parseInt(x) {
 exports.parseInt = parseInt;
 class NegativeSubscript extends queue_1.default {
     constructor(...elems) {
-        super();
-        const queue = new queue_1.default(...elems);
-        return new Proxy({}, {
+        super(...elems);
+        return new Proxy(this, {
             get: function (target, field, receiver) {
                 try {
                     let subscript = parseInt(field);
                     if (subscript < 0)
-                        subscript += queue.length;
-                    return queue.vector[queue.front + subscript];
+                        subscript += target.length;
+                    return target.vector[target.front + subscript];
                 }
                 catch (e) {
-                    const member = Reflect.get(queue, field, queue);
-                    if (typeof member === 'function')
-                        return function (...args) {
-                            const returnValue = member(...args);
-                            if (returnValue === queue)
-                                return receiver;
-                            else
-                                return returnValue;
-                        };
-                    else
-                        return member;
+                    const member = Reflect.get(target, field, receiver);
+                    return member;
                 }
             }
         });
