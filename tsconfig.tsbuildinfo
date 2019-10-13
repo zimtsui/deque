@@ -138,8 +138,8 @@
         "signature": "d2588878ba44c241a07305b295f1ec4f4a8a0df4c7ae956a6182315583be40f1"
       },
       "/home/zim/queue/src/index.ts": {
-        "version": "17dfb8e1d8b3f129f38738c8835505b6defa0575d8b838839eb0546d2496af2e",
-        "signature": "3301b48bee80b8264fdb64375aacbc9a9b9bf724de700861b9d5edbf413e405b"
+        "version": "eb123f6dee42da3fec1c286a112d4b4a87feffa98e17e335e482d8331df9d16e",
+        "signature": "b6abe42600e601fcf4a85f9721dae694212d411658169cf3c35c657e7cd99a11"
       },
       "/home/zim/queue/node_modules/@types/events/index.d.ts": {
         "version": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",
@@ -1170,6 +1170,9 @@
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/home/zim/queue/src/index.ts": [
+        "/home/zim/queue/src/parse-natural.ts"
+      ],
       "/home/zim/queue/node_modules/@types/events/index.d.ts": [
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
@@ -1659,9 +1662,6 @@
         "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/zim/queue/src/index.ts": [
-        "/home/zim/queue/src/parse-natural.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
