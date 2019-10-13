@@ -138,8 +138,8 @@
         "signature": "ca6626197c462fb76f7e0668be1ab7af2fe5c755b0b8571431a2add0ca2f6f8b"
       },
       "/home/zim/queue/src/negative-subscript.ts": {
-        "version": "8f188999bb41b6b1195340779d6a24c64209e264856ad0292d4df3131e4804e9",
-        "signature": "740055eeaedc88abd8c15f60c5bf46aa3a5e0813d143f287c8966d5ead1866d6"
+        "version": "4e8c6f63625e4e4305376b58cde8000152c3dccf2bd4fdac758063783f26c4e6",
+        "signature": "d06a3f7e4f3e9c5f64306677ec23954224fd6352585c688c9069f199c561a6db"
       },
       "/home/zim/queue/src/index.ts": {
         "version": "5181a6994cec74566645fc3d2a5f677a9466ea0027a7ca7f80e16ee15d7b11aa",
@@ -1180,6 +1180,13 @@
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/home/zim/queue/src/negative-subscript.ts": [
+        "/home/zim/queue/src/queue.ts"
+      ],
+      "/home/zim/queue/src/index.ts": [
+        "/home/zim/queue/src/queue.ts",
+        "/home/zim/queue/src/negative-subscript.ts"
+      ],
       "/home/zim/queue/node_modules/@types/events/index.d.ts": [
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
@@ -1669,10 +1676,6 @@
         "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "/home/zim/queue/src/index.ts": [
-        "/home/zim/queue/src/queue.ts",
-        "/home/zim/queue/src/negative-subscript.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1709,6 +1712,8 @@
       "/home/zim/queue/node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "/home/zim/queue/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
       "/home/zim/queue/node_modules/autobind-decorator/index.d.ts",
+      "/home/zim/queue/src/queue.ts",
+      "/home/zim/queue/src/index.ts",
       "/home/zim/queue/node_modules/@types/events/index.d.ts",
       "/home/zim/queue/node_modules/@types/node/globals.d.ts",
       "/home/zim/queue/node_modules/@types/node/assert.d.ts",
@@ -1769,9 +1774,7 @@
       "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
       "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
       "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
-      "/home/zim/queue/src/queue.ts",
-      "/home/zim/queue/src/negative-subscript.ts",
-      "/home/zim/queue/src/index.ts"
+      "/home/zim/queue/src/negative-subscript.ts"
     ]
   },
   "version": "3.5.3"

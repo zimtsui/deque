@@ -14,9 +14,9 @@ function parseInt(x) {
         throw null;
 }
 exports.parseInt = parseInt;
-class NegativeSubscript {
+class NegativeSubscript extends queue_1.default {
     constructor(...elems) {
-        this.length = {};
+        super();
         const queue = new queue_1.default(...elems);
         return new Proxy({}, {
             get: function (target, field, receiver) {
@@ -42,11 +42,6 @@ class NegativeSubscript {
             }
         });
     }
-    push(...elems) { return {}; }
-    shift(num = 1) { return {}; }
-    shiftWhile(pred) { return {}; }
-    [Symbol.iterator]() { return {}; }
-    clear() { return {}; }
 }
 exports.NegativeSubscript = NegativeSubscript;
 exports.default = NegativeSubscript;
