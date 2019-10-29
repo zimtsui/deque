@@ -133,13 +133,25 @@
         "version": "2de69362c6be41535d58884c066a2b104c9e0e5aab709f35aed8d4e08ead4c95",
         "signature": "2de69362c6be41535d58884c066a2b104c9e0e5aab709f35aed8d4e08ead4c95"
       },
-      "/home/zim/queue/src/parse-natural.ts": {
-        "version": "21dcb429ff36bbafb3e66de2a8012181d8ec5e58e180f113bf774317e779ef6c",
-        "signature": "d2588878ba44c241a07305b295f1ec4f4a8a0df4c7ae956a6182315583be40f1"
+      "/home/zim/queue/node_modules/@types/chai/index.d.ts": {
+        "version": "18b15124f823de4d821e310ad2f9ce45b89ae065c0ada7c95ed5d04e462d3d03",
+        "signature": "18b15124f823de4d821e310ad2f9ce45b89ae065c0ada7c95ed5d04e462d3d03"
+      },
+      "/home/zim/queue/src/queue.ts": {
+        "version": "78b1f1c36c5bf1e9ebb426f36d9a5a1a0b359240ec80270385f81eea617317ab",
+        "signature": "da1020d51fb585bf6d247e2ab48221418fe7cdeadc1121302149bdd364ea0ee5"
+      },
+      "/home/zim/queue/src/negative-subscript.ts": {
+        "version": "1d0df32f91aaebfc9c36dde70408defc607d1136b3f9b0a11a0f88cdd4d6fdbd",
+        "signature": "41b6d3cc49917f192cd4ef5dc24b4291a0efcc32a363915d89164b62b71dca10"
       },
       "/home/zim/queue/src/index.ts": {
-        "version": "eb123f6dee42da3fec1c286a112d4b4a87feffa98e17e335e482d8331df9d16e",
-        "signature": "b6abe42600e601fcf4a85f9721dae694212d411658169cf3c35c657e7cd99a11"
+        "version": "ac0d4c9829ed7369c2fd111d4580579667e28a61276b18fc9dcb5c0f9ad60fe1",
+        "signature": "65c5214c2ce65f3bd03ce43cec70cfbe1859f63387984db1ff5632bc0bcb1d67"
+      },
+      "/home/zim/queue/src/parse-integer.ts": {
+        "version": "e7588a8ab9b9a27c3d3ebf300f475a2a2e4e700e7ae9d0d51d40f755dd0bf546",
+        "signature": "0a5ed1ae8aedc4bcfdfe78e2966b5dbf044984389c85a0f09744d5f84fe204f2"
       },
       "/home/zim/queue/node_modules/@types/events/index.d.ts": {
         "version": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",
@@ -383,24 +395,23 @@
       }
     },
     "options": {
-      "target": 2,
+      "target": 7,
       "module": 1,
       "lib": [
         "lib.esnext.d.ts"
       ],
       "sourceMap": true,
-      "removeComments": true,
       "strict": true,
-      "noImplicitAny": false,
-      "noUnusedLocals": true,
       "noImplicitReturns": true,
       "noFallthroughCasesInSwitch": true,
       "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "experimentalDecorators": true,
       "composite": true,
       "declaration": true,
       "rootDir": "/home/zim/queue/src/",
       "outDir": "/home/zim/queue/dist/",
-      "experimentalDecorators": true,
+      "noUnusedLocals": true,
       "configFilePath": "/home/zim/queue/tsconfig.json"
     },
     "referencedMap": {
@@ -536,13 +547,28 @@
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "/home/zim/queue/src/parse-natural.ts": [
+      "/home/zim/queue/node_modules/@types/chai/index.d.ts": [
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/src/queue.ts": [
+        "/home/zim/queue/node_modules/autobind-decorator/index.d.ts",
+        "/home/zim/queue/node_modules/@types/chai/index.d.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/src/negative-subscript.ts": [
+        "/home/zim/queue/src/queue.ts",
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "/home/zim/queue/src/index.ts": [
-        "/home/zim/queue/node_modules/autobind-decorator/index.d.ts",
-        "/home/zim/queue/src/parse-natural.ts",
+        "/home/zim/queue/src/queue.ts",
+        "/home/zim/queue/src/negative-subscript.ts",
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/src/parse-integer.ts": [
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -1170,8 +1196,16 @@
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
         "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "/home/zim/queue/node_modules/@types/chai/index.d.ts": [
+        "/home/zim/queue/node_modules/@types/node/util.d.ts",
+        "/home/zim/queue/node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "/home/zim/queue/src/negative-subscript.ts": [
+        "/home/zim/queue/src/queue.ts"
+      ],
       "/home/zim/queue/src/index.ts": [
-        "/home/zim/queue/src/parse-natural.ts"
+        "/home/zim/queue/src/queue.ts",
+        "/home/zim/queue/src/negative-subscript.ts"
       ],
       "/home/zim/queue/node_modules/@types/events/index.d.ts": [
         "/home/zim/queue/node_modules/@types/node/util.d.ts",
@@ -1698,7 +1732,11 @@
       "/home/zim/queue/node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "/home/zim/queue/node_modules/typescript/lib/lib.esnext.bigint.d.ts",
       "/home/zim/queue/node_modules/autobind-decorator/index.d.ts",
-      "/home/zim/queue/src/parse-natural.ts",
+      "/home/zim/queue/node_modules/@types/chai/index.d.ts",
+      "/home/zim/queue/src/queue.ts",
+      "/home/zim/queue/src/negative-subscript.ts",
+      "/home/zim/queue/src/index.ts",
+      "/home/zim/queue/src/parse-integer.ts",
       "/home/zim/queue/node_modules/@types/events/index.d.ts",
       "/home/zim/queue/node_modules/@types/node/globals.d.ts",
       "/home/zim/queue/node_modules/@types/node/assert.d.ts",
@@ -1758,8 +1796,7 @@
       "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/seq.d.ts",
       "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/string.d.ts",
       "/home/zim/queue/node_modules/@types/lodash/ts3.1/common/util.d.ts",
-      "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts",
-      "/home/zim/queue/src/index.ts"
+      "/home/zim/queue/node_modules/@types/lodash/ts3.1/index.d.ts"
     ]
   },
   "version": "3.5.3"

@@ -9,7 +9,7 @@ const assert_1 = __importDefault(require("assert"));
 const lodash_1 = __importDefault(require("lodash"));
 ava_1.default.serial('test 1', t => {
     console.log = t.log;
-    const q = new __1.Queue(1);
+    const q = new __1.NegativeSubscript(1);
     assert_1.default.deepStrictEqual([...q], [1]);
     q.push(2, 3, 4, 5, 6, 7, 8);
     assert_1.default.deepStrictEqual([...q], [1, 2, 3, 4, 5, 6, 7, 8]);

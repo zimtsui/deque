@@ -26,7 +26,9 @@
         "typescript": "^3.5.3"
     },
     "dependencies": {
-        "autobind-decorator": "^2.4.0"
+        "@types/chai": "^4.2.4",
+        "autobind-decorator": "^2.4.0",
+        "chai": "^4.2.0"
     },
     "ava": {
         "failWithoutAssertions": false,
