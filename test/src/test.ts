@@ -1,11 +1,12 @@
-import { NegativeSubscript } from '../..';
-import test from 'ava';
-import assert from 'assert';
+import Queue from '../../dist/index';
 import _ from 'lodash';
+import test from 'ava';
+import chai from 'chai';
+const { assert } = chai;
 
 test.serial('test 1', t => {
     console.log = t.log;
-    const q = new NegativeSubscript<number>(1);
+    const q = new Queue<number>(1);
     assert.deepStrictEqual([...q], [1]);
     q.push(2, 3, 4, 5, 6, 7, 8);
     assert.deepStrictEqual([...q], [1, 2, 3, 4, 5, 6, 7, 8]);

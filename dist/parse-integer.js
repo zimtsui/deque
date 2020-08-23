@@ -1,15 +1,12 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const INTEGER = /^(0$)|-?([1-9]\d*$)/;
-exports.INTEGER = INTEGER;
 function parseInteger(x) {
     if (typeof x === 'number')
         x = `${x}`;
     if (typeof x === 'string' && INTEGER.test(x))
         return Number.parseInt(x);
     else
-        throw new Error('not a Natural');
+        throw new Error('not an integer');
 }
-exports.parseInteger = parseInteger;
-exports.default = parseInteger;
+export default parseInteger;
+export { parseInteger, INTEGER, };
 //# sourceMappingURL=parse-integer.js.map

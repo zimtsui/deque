@@ -1,8 +1,4 @@
-"use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./queue"));
-__export(require("./negative-subscript"));
+export { default } from './queue';
+export * from './queue';
+export * from './queue-without-subscript';
 //# sourceMappingURL=index.js.map

@@ -4,7 +4,7 @@ function parseInteger(x: unknown): number {
     if (typeof x === 'number') x = `${x}`;
     if (typeof x === 'string' && INTEGER.test(x))
         return Number.parseInt(x);
-    else throw new Error('not a Natural');
+    else throw new Error('not an integer');
 }
 
 export default parseInteger;

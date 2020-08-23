@@ -1,2 +1,3 @@
+export { default } from './queue';
 export * from './queue';
-export * from './negative-subscript';
+export * from './queue-without-subscript';

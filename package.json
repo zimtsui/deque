@@ -2,6 +2,7 @@
     "name": "queue",
     "version": "0.0.1",
     "description": "",
+    "type": "module",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "scripts": {
@@ -19,19 +20,13 @@
     },
     "homepage": "https://github.com/zimtsui/queue#readme",
     "devDependencies": {
-        "@types/lodash": "^4.14.141",
-        "@types/node": "^12.7.11",
-        "ava": "^2.2.0",
-        "lodash": "^4.17.15",
-        "typescript": "^3.5.3"
+        "@types/lodash": "^4.14.159",
+        "ava": "^3.11.1",
+        "lodash": "^4.17.20"
     },
     "dependencies": {
         "@types/chai": "^4.2.4",
         "autobind-decorator": "^2.4.0",
         "chai": "^4.2.0"
-    },
-    "ava": {
-        "failWithoutAssertions": false,
-        "verbose": true
     }
 }

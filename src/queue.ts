@@ -1,85 +1,41 @@
-import { boundMethod } from 'autobind-decorator';
-import { assert } from 'chai';
+import {
+    QueueWithoutSubscriptLike,
+    QueueWithoutSubscript,
+} from './queue-without-subscript';
 
-// interface QueueLike<T> extends ArrayLike<T>, Iterable<T> {
-//     push(...elems: T[]): this;
-//     shift(num?: number): this;
-//     clear(): this;
-//     shiftWhile(pred: (x: T) => boolean): this;
-//     [Symbol.iterator](): IterableIterator<T>;
-//     length: number;
-// }
+interface QueueLike<T> extends QueueWithoutSubscriptLike<T>, ArrayLike<T> { }
 
-class Queue<T> /*implements QueueLike<T>*/ {
-    protected vector: T[] = [];
-    protected front = 0;
-    protected rear = 0;
+class Queue<T> extends QueueWithoutSubscript<T> implements QueueLike<T> {
+    [index: number]: T;
 
     constructor(...elems: T[]) {
-        this.push(...elems);
-    }
-
-    @boundMethod
-    private shrink(): this {
-        if (this.front > this.rear - this.front) {
-            this.vector = this.vector.slice(this.front, this.rear);
-            this.rear -= this.front;
-            this.front = 0;
-        }
-        return this;
-    }
-
-    @boundMethod
-    public push(...elems: T[]): this {
-        this.vector.push(...elems);
-        this.rear += elems.length;
-        return this;
-    }
-
-    @boundMethod
-    public shift(num = 1): this {
-        if (this.front + num > this.rear) throw new Error('no enough elements');
-        this.front += num;
-        this.shrink();
-        return this;
-    }
-
-    @boundMethod
-    public clear(): this {
-        this.front = this.rear;
-        this.shrink();
-        return this;
-    }
-
-    @boundMethod
-    public shiftWhile(pred: (x: T) => boolean): this {
-        for (; this.front < this.rear && pred(this.vector[this.front]); this.front += 1);
-        this.shrink();
-        return this;
-    }
-
-    @boundMethod
-    public [Symbol.iterator]() {
-        return this.vector.slice(this.front, this.rear)[Symbol.iterator]();
-    }
-
-    public get length() {
-        return this.rear - this.front;
-    }
-
-    /**
-     * @param index must be an integer, or an unpredictable error may occur.
-     */
-    @boundMethod
-    public n(index: number) {
-        if (index < 0) index += this.length;
-        assert(index >= 0 && index < this.length);
-        return this.vector[this.front + index];
+        super(...elems);
+        return new Proxy(this, {
+            get: function (
+                target: Queue<T>,
+                field: string | symbol | number,
+                receiver: Queue<T>,
+            ) {
+                if (typeof field === 'string') {
+                    const subscript = Number.parseInt(field);
+                    if (Number.isNaN(subscript)) {
+                        const returnValue = Reflect.get(target, field, target);
+                        if (returnValue === target) return receiver; else return returnValue;
+                    }
+                    else return target.n(subscript);
+                } else if (typeof field === 'number')
+                    return target.n(field);
+                else {
+                    const returnValue = Reflect.get(target, field, target);
+                    if (returnValue === target) return receiver; else return returnValue;
+                }
+            }
+        });
     }
 }
 
-export default Queue;
 export {
+    Queue as default,
     Queue,
-    // QueueLike,
-};
+    QueueLike,
+}
