@@ -3,7 +3,7 @@ declare class LinearQueue<T> implements PrimitiveQueueInterface<T> {
     protected vector: T[];
     protected front: number;
     protected rear: number;
-    constructor(...elems: T[]);
+    constructor(...items: T[]);
     private shrink;
     push(...items: T[]): void;
     shift(num?: number): void;

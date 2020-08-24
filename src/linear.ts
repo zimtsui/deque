@@ -5,8 +5,8 @@ class LinearQueue<T> implements PrimitiveQueueInterface<T> {
     protected front = 0;
     protected rear = 0;
 
-    constructor(...elems: T[]) {
-        this.push(...elems);
+    constructor(...items: T[]) {
+        this.push(...items);
     }
 
     private shrink(): void {

@@ -1,9 +1,9 @@
 class LinearQueue {
-    constructor(...elems) {
+    constructor(...items) {
         this.vector = [];
         this.front = 0;
         this.rear = 0;
-        this.push(...elems);
+        this.push(...items);
     }
     shrink() {
         if (this.front > this.rear - this.front) {

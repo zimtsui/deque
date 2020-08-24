@@ -207,8 +207,8 @@
         "affectsGlobalScope": false
       },
       "./src/linear.ts": {
-        "version": "018673d261444b67dddb7ec61f0ae59975c0363078421c1dbba96c5004fd244c",
-        "signature": "8b33f00e9039ebc8ba137482dcdefb1668d5a4a945fb9d58af473411262b773a",
+        "version": "0bf661d51317bb4fa2cd1b8ed07d9806a523de2d84d91af9030d67c47db7f0ea",
+        "signature": "fdbbd987d6b80e774a79babef83c1f8a9b42cff59b7ff513a1ac694581d8cc99",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/chai/index.d.ts": {
@@ -216,14 +216,14 @@
         "signature": "18b15124f823de4d821e310ad2f9ce45b89ae065c0ada7c95ed5d04e462d3d03",
         "affectsGlobalScope": true
       },
-      "./src/random-access.ts": {
-        "version": "9b127bde55240f8dc97c3aed5f173bc82260831767d747f5224268cecd8be5d4",
-        "signature": "01e5cb527a7527a35dd3d624d3a46baf68f8256ed9c392f80dd26f247f60b927",
+      "./src/random-access-linear.ts": {
+        "version": "2404c8ffdd247bfc4ecfd5ada2f4fb8925f763628f7d24f2bbb959748366132e",
+        "signature": "588e9c49a059ef594a572aaca9febcfa037448d4449720a76bcad191827ad53b",
         "affectsGlobalScope": false
       },
       "./src/random-access-linear-iterable.ts": {
-        "version": "c14aa3ff550b2abfb7e35fa37ab5b1ea5293e35005e68f464c9b8ea89db055cb",
-        "signature": "c95c858241a1bbc13d1a336eac60fbc39bf98d21c79ee821c9f11e894d140ad4",
+        "version": "54f896d0b057bac45ba5cbfb119ae5da765df2a14f553970909cbc261818ed67",
+        "signature": "d1971e8df6def3b87105a4120bbd10548d36c731f9ffdac287d5e6d9a3105344",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
@@ -1443,9 +1443,9 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./src/interfaces.ts",
-        "./src/random-access.ts"
+        "./src/random-access-linear.ts"
       ],
-      "./src/random-access.ts": [
+      "./src/random-access-linear.ts": [
         "./node_modules/@types/chai/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/process.d.ts",
@@ -2600,9 +2600,9 @@
       ],
       "./src/random-access-linear-iterable.ts": [
         "./src/interfaces.ts",
-        "./src/random-access.ts"
+        "./src/random-access-linear.ts"
       ],
-      "./src/random-access.ts": [
+      "./src/random-access-linear.ts": [
         "./src/interfaces.ts",
         "./src/linear.ts"
       ],
@@ -3002,7 +3002,7 @@
       "./src/interfaces.ts",
       "./src/linear.ts",
       "./src/random-access-linear-iterable.ts",
-      "./src/random-access.ts",
+      "./src/random-access-linear.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts",

@@ -1,4 +1,4 @@
-import { RandomAccessLinearQueue } from './random-access';
+import { RandomAccessLinearQueue } from './random-access-linear';
 import { RandomAccessIterableQueueInterface } from './interfaces';
 
 class RandomAccessLinearIterableQueue<T>

@@ -1,4 +1,4 @@
-import { RandomAccessLinearQueue } from './random-access';
+import { RandomAccessLinearQueue } from './random-access-linear';
 class RandomAccessLinearIterableQueue extends RandomAccessLinearQueue {
     [Symbol.iterator]() {
         return this.vector.slice(this.front, this.rear)[Symbol.iterator]();
