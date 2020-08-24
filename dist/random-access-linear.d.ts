@@ -4,6 +4,5 @@ declare class RandomAccessLinearQueue<T> extends LinearQueue<T> implements Rando
     [index: number]: T;
     constructor(...items: T[]);
     get length(): number;
-    private n;
 }
 export { RandomAccessLinearQueue as default, RandomAccessLinearQueue, };

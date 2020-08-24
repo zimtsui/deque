@@ -15,14 +15,11 @@ class RandomAccessLinearQueue<T> extends LinearQueue<T> implements RandomAccessQ
                 receiver: RandomAccessLinearQueue<T>,
             ) {
                 if (typeof field === 'string') {
-                    const subscript = Number.parseInt(field);
-                    if (Number.isNaN(subscript)) {
-                        const returnValue = Reflect.get(target, field, target);
-                        if (returnValue === target) return receiver; else return returnValue;
-                    }
-                    else return target.n(subscript);
-                } else if (typeof field === 'number')
-                    return target.n(field);
+                    const index = Number.parseInt(field);
+                    if (!Number.isNaN(index)) field = index;
+                }
+                if (typeof field === 'number')
+                    return target.vector[target.front + field];
                 else {
                     const returnValue = Reflect.get(target, field, target);
                     if (returnValue === target) return receiver; else return returnValue;
@@ -33,12 +30,6 @@ class RandomAccessLinearQueue<T> extends LinearQueue<T> implements RandomAccessQ
 
     public get length(): number {
         return this.rear - this.front;
-    }
-
-    private n(index: number) {
-        if (index < 0) index += this.length;
-        assert(index >= 0 && index < this.length);
-        return this.vector[this.front + index];
     }
 }
 

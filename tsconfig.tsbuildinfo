@@ -217,8 +217,8 @@
         "affectsGlobalScope": true
       },
       "./src/random-access-linear.ts": {
-        "version": "2404c8ffdd247bfc4ecfd5ada2f4fb8925f763628f7d24f2bbb959748366132e",
-        "signature": "588e9c49a059ef594a572aaca9febcfa037448d4449720a76bcad191827ad53b",
+        "version": "d2dde4289e3949bfddc2c037f887ae8d537158702a392acb7d009083a60c6bca",
+        "signature": "a00c1f5924e596342046a4517c37170e5209f74cac920f130284c5a44835b264",
         "affectsGlobalScope": false
       },
       "./src/random-access-linear-iterable.ts": {
@@ -227,8 +227,8 @@
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "3d99a24f318ab8887647a007e0300961717759267f157dd6bc0d52bd973ba9b7",
-        "signature": "ab0e9e7cdc720b19e87fa0445e7fc67b45bc30c6c32132aade46da985d6173ab",
+        "version": "d96faabc9e45fab7a45baddf0e55ea96e6a06cfc406267f2c47ae7facaee096e",
+        "signature": "1496de4eef6bc0d6cf63f1221b21c8f40d0300017d76f9ed6973d5268fcce354",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/color-name/index.d.ts": {
@@ -1416,7 +1416,9 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./src/interfaces.ts",
-        "./src/random-access-linear-iterable.ts"
+        "./src/linear.ts",
+        "./src/random-access-linear-iterable.ts",
+        "./src/random-access-linear.ts"
       ],
       "./src/interfaces.ts": [
         "./node_modules/@types/node/fs.d.ts",
@@ -2593,7 +2595,9 @@
       ],
       "./src/index.ts": [
         "./src/interfaces.ts",
-        "./src/random-access-linear-iterable.ts"
+        "./src/linear.ts",
+        "./src/random-access-linear-iterable.ts",
+        "./src/random-access-linear.ts"
       ],
       "./src/linear.ts": [
         "./src/interfaces.ts"
