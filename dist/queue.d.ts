@@ -1,8 +1,7 @@
-import { QueueWithoutSubscriptLike, QueueWithoutSubscript } from './queue-without-subscript';
-interface QueueLike<T> extends QueueWithoutSubscriptLike<T>, ArrayLike<T> {
+import { RandomAccessQueue, RandomAccessQueueLike } from './random-access-queue';
+interface QueueLike<T> extends RandomAccessQueueLike<T>, Iterable<T> {
 }
-declare class Queue<T> extends QueueWithoutSubscript<T> implements QueueLike<T> {
-    [index: number]: T;
-    constructor(...elems: T[]);
+declare class Queue<T> extends RandomAccessQueue<T> implements QueueLike<T> {
+    [Symbol.iterator](): IterableIterator<T>;
 }
 export { Queue as default, Queue, QueueLike, };

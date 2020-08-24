@@ -201,29 +201,29 @@
         "signature": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
         "affectsGlobalScope": true
       },
+      "./src/primitive-queue.ts": {
+        "version": "0c944a2c670d7dc3c2ddc699db6f1db297983fe6011ed38a19cd6317b9e7dc0e",
+        "signature": "8cf4c2f50c9e6506bbf654c8ed090d61d1e48f0ff3d04a86e5f2b31eeff6dd36",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@types/chai/index.d.ts": {
         "version": "18b15124f823de4d821e310ad2f9ce45b89ae065c0ada7c95ed5d04e462d3d03",
         "signature": "18b15124f823de4d821e310ad2f9ce45b89ae065c0ada7c95ed5d04e462d3d03",
         "affectsGlobalScope": true
       },
-      "./src/queue-without-subscript.ts": {
-        "version": "d0999a1300641c51e2f89ee723df1114d5162a4831abf23682d78cee2bd87069",
-        "signature": "765f1e50141ac2dd4cdb4167875f0d34ca82ead650ae6e2fbe9c5aca207ed5e7",
+      "./src/random-access-queue.ts": {
+        "version": "4c062d385331f5b55a529f62b63e980c0be9c689e7029d237a7d64a15d063a02",
+        "signature": "c475a0eff63448579e7acf00923e686bf874c320be23f76f448fd79af9bda7ce",
         "affectsGlobalScope": false
       },
       "./src/queue.ts": {
-        "version": "9a9662162636c9c4886b95319ff0037b583a0e54b2274c240cc74291892c9e17",
-        "signature": "871b2954d9965f4dd8b2767d7e5820d1a81c8009f60680cfd09c7f7ac4b47db0",
+        "version": "4347569184d737490d70ca5dcc3a7b1a38779d721aa63a906e1cdc6b867d853b",
+        "signature": "1390aca3bfb8ac2e97172c24ab78f4fb9cfa9e2d385d38c3ddd8b86419bdc096",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "e5629c86a3260bce342cf1d37d876e5e98bbb6d594cf6e05e41bbafc72f33990",
-        "signature": "9a7023d47c4d33645b9f40cb0e717341d158ca61a29c3301017706ea97f002ec",
-        "affectsGlobalScope": false
-      },
-      "./src/parse-integer.ts": {
-        "version": "1651c5587b9819dea47b3fb561aa3fa9fb17c6261ca3ab826ae781319e25c56d",
-        "signature": "0a5ed1ae8aedc4bcfdfe78e2966b5dbf044984389c85a0f09744d5f84fe204f2",
+        "version": "812de8bfbe02d2ff41ebb642dc9b144f705ebfa15192ec0f1b5ddd3392b92d1e",
+        "signature": "cc3e2dd66510aa2dcef07a7578af94b74bce86072cf0c7bb6e5600fceb4a56d4",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/color-name/index.d.ts": {
@@ -1410,19 +1410,9 @@
         "./node_modules/@types/node/ts3.2/process.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/queue-without-subscript.ts",
         "./src/queue.ts"
       ],
-      "./src/parse-integer.ts": [
-        "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/process.d.ts",
-        "./node_modules/@types/node/ts3.2/fs.d.ts",
-        "./node_modules/@types/node/ts3.2/process.d.ts",
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
-      ],
-      "./src/queue-without-subscript.ts": [
-        "./node_modules/@types/chai/index.d.ts",
+      "./src/primitive-queue.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/process.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1437,7 +1427,17 @@
         "./node_modules/@types/node/ts3.2/process.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/queue-without-subscript.ts"
+        "./src/random-access-queue.ts"
+      ],
+      "./src/random-access-queue.ts": [
+        "./node_modules/@types/chai/index.d.ts",
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/process.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/process.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/primitive-queue.ts"
       ],
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
@@ -2575,11 +2575,13 @@
         "./node_modules/@types/node/util.d.ts"
       ],
       "./src/index.ts": [
-        "./src/queue-without-subscript.ts",
         "./src/queue.ts"
       ],
       "./src/queue.ts": [
-        "./src/queue-without-subscript.ts"
+        "./src/random-access-queue.ts"
+      ],
+      "./src/random-access-queue.ts": [
+        "./src/primitive-queue.ts"
       ],
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
@@ -2974,9 +2976,9 @@
       "./node_modules/@types/node/zlib.d.ts",
       "./node_modules/@types/normalize-package-data/index.d.ts",
       "./src/index.ts",
-      "./src/parse-integer.ts",
-      "./src/queue-without-subscript.ts",
+      "./src/primitive-queue.ts",
       "./src/queue.ts",
+      "./src/random-access-queue.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts",
