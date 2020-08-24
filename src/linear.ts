@@ -1,9 +1,6 @@
-interface PrimitiveQueueLike<T> {
-    push(...items: T[]): unknown;
-    shift(num?: number): unknown;
-}
+import { PrimitiveQueueInterface } from './interfaces';
 
-class PrimitiveQueue<T> implements PrimitiveQueueLike<T> {
+class LinearQueue<T> implements PrimitiveQueueInterface<T> {
     protected vector: T[] = [];
     protected front = 0;
     protected rear = 0;
@@ -30,10 +27,19 @@ class PrimitiveQueue<T> implements PrimitiveQueueLike<T> {
         this.front += num;
         this.shrink();
     }
+
+    public clear(): void {
+        this.front = this.rear;
+        this.shrink();
+    }
+
+    public shiftWhile(pred: (x: T) => boolean): void {
+        for (; this.front < this.rear && pred(this.vector[this.front]); this.front += 1);
+        this.shrink();
+    }
 }
 
 export {
-    PrimitiveQueue as default,
-    PrimitiveQueue,
-    PrimitiveQueueLike,
+    LinearQueue as default,
+    LinearQueue,
 };

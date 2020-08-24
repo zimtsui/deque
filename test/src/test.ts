@@ -15,7 +15,7 @@ test.serial('test 1', t => {
     q.shift(1);
     assert(q[-1] === 8);
     assert.deepStrictEqual([...q], [3, 4, 5, 6, 7, 8]);
-    while (q[0] < 5) q.shift();
+    q.shiftWhile(x => x < 5);
     assert.deepStrictEqual([...q], [5, 6, 7, 8]);
     assert(q[0] === 5);
     assert(q[q.length - 1] === 8);

@@ -201,9 +201,14 @@
         "signature": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
         "affectsGlobalScope": true
       },
-      "./src/primitive-queue.ts": {
-        "version": "0c944a2c670d7dc3c2ddc699db6f1db297983fe6011ed38a19cd6317b9e7dc0e",
-        "signature": "8cf4c2f50c9e6506bbf654c8ed090d61d1e48f0ff3d04a86e5f2b31eeff6dd36",
+      "./src/interfaces.ts": {
+        "version": "9a87496bb39e0eebaf4621edfec97a6373d1b381dfda88afce13a29636e3a9da",
+        "signature": "7768afa066198ba3c8e457066caf5a35899c9d6e516bbd1e49429e212c4452c2",
+        "affectsGlobalScope": false
+      },
+      "./src/linear.ts": {
+        "version": "018673d261444b67dddb7ec61f0ae59975c0363078421c1dbba96c5004fd244c",
+        "signature": "8b33f00e9039ebc8ba137482dcdefb1668d5a4a945fb9d58af473411262b773a",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/chai/index.d.ts": {
@@ -211,19 +216,19 @@
         "signature": "18b15124f823de4d821e310ad2f9ce45b89ae065c0ada7c95ed5d04e462d3d03",
         "affectsGlobalScope": true
       },
-      "./src/random-access-queue.ts": {
-        "version": "4c062d385331f5b55a529f62b63e980c0be9c689e7029d237a7d64a15d063a02",
-        "signature": "c475a0eff63448579e7acf00923e686bf874c320be23f76f448fd79af9bda7ce",
+      "./src/random-access.ts": {
+        "version": "9b127bde55240f8dc97c3aed5f173bc82260831767d747f5224268cecd8be5d4",
+        "signature": "01e5cb527a7527a35dd3d624d3a46baf68f8256ed9c392f80dd26f247f60b927",
         "affectsGlobalScope": false
       },
-      "./src/queue.ts": {
-        "version": "4347569184d737490d70ca5dcc3a7b1a38779d721aa63a906e1cdc6b867d853b",
-        "signature": "1390aca3bfb8ac2e97172c24ab78f4fb9cfa9e2d385d38c3ddd8b86419bdc096",
+      "./src/random-access-linear-iterable.ts": {
+        "version": "c14aa3ff550b2abfb7e35fa37ab5b1ea5293e35005e68f464c9b8ea89db055cb",
+        "signature": "c95c858241a1bbc13d1a336eac60fbc39bf98d21c79ee821c9f11e894d140ad4",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "812de8bfbe02d2ff41ebb642dc9b144f705ebfa15192ec0f1b5ddd3392b92d1e",
-        "signature": "cc3e2dd66510aa2dcef07a7578af94b74bce86072cf0c7bb6e5600fceb4a56d4",
+        "version": "3d99a24f318ab8887647a007e0300961717759267f157dd6bc0d52bd973ba9b7",
+        "signature": "ab0e9e7cdc720b19e87fa0445e7fc67b45bc30c6c32132aade46da985d6173ab",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/color-name/index.d.ts": {
@@ -1410,9 +1415,10 @@
         "./node_modules/@types/node/ts3.2/process.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/queue.ts"
+        "./src/interfaces.ts",
+        "./src/random-access-linear-iterable.ts"
       ],
-      "./src/primitive-queue.ts": [
+      "./src/interfaces.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/process.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1420,16 +1426,26 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./src/queue.ts": [
+      "./src/linear.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/process.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/process.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/random-access-queue.ts"
+        "./src/interfaces.ts"
       ],
-      "./src/random-access-queue.ts": [
+      "./src/random-access-linear-iterable.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/process.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/process.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./src/interfaces.ts",
+        "./src/random-access.ts"
+      ],
+      "./src/random-access.ts": [
         "./node_modules/@types/chai/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/process.d.ts",
@@ -1437,7 +1453,8 @@
         "./node_modules/@types/node/ts3.2/process.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
-        "./src/primitive-queue.ts"
+        "./src/interfaces.ts",
+        "./src/linear.ts"
       ],
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
@@ -2575,13 +2592,19 @@
         "./node_modules/@types/node/util.d.ts"
       ],
       "./src/index.ts": [
-        "./src/queue.ts"
+        "./src/interfaces.ts",
+        "./src/random-access-linear-iterable.ts"
       ],
-      "./src/queue.ts": [
-        "./src/random-access-queue.ts"
+      "./src/linear.ts": [
+        "./src/interfaces.ts"
       ],
-      "./src/random-access-queue.ts": [
-        "./src/primitive-queue.ts"
+      "./src/random-access-linear-iterable.ts": [
+        "./src/interfaces.ts",
+        "./src/random-access.ts"
+      ],
+      "./src/random-access.ts": [
+        "./src/interfaces.ts",
+        "./src/linear.ts"
       ],
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
@@ -2976,9 +2999,10 @@
       "./node_modules/@types/node/zlib.d.ts",
       "./node_modules/@types/normalize-package-data/index.d.ts",
       "./src/index.ts",
-      "./src/primitive-queue.ts",
-      "./src/queue.ts",
-      "./src/random-access-queue.ts",
+      "./src/interfaces.ts",
+      "./src/linear.ts",
+      "./src/random-access-linear-iterable.ts",
+      "./src/random-access.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts",

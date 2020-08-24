@@ -1,22 +1,18 @@
-import {
-    PrimitiveQueue,
-    PrimitiveQueueLike,
-} from './primitive-queue';
+import { LinearQueue } from './linear';
+import { RandomAccessQueueInterface } from './interfaces';
 import chai from 'chai';
 const { assert } = chai;
 
-interface RandomAccessQueueLike<T> extends PrimitiveQueueLike<T>, ArrayLike<T> { }
-
-class RandomAccessQueue<T> extends PrimitiveQueue<T> implements RandomAccessQueueLike<T>{
+class RandomAccessLinearQueue<T> extends LinearQueue<T> implements RandomAccessQueueInterface<T>{
     [index: number]: T;
 
     constructor(...elems: T[]) {
         super(...elems);
         return new Proxy(this, {
             get: function (
-                target: RandomAccessQueue<T>,
+                target: RandomAccessLinearQueue<T>,
                 field: string | symbol | number,
-                receiver: RandomAccessQueue<T>,
+                receiver: RandomAccessLinearQueue<T>,
             ) {
                 if (typeof field === 'string') {
                     const subscript = Number.parseInt(field);
@@ -47,7 +43,6 @@ class RandomAccessQueue<T> extends PrimitiveQueue<T> implements RandomAccessQueu
 }
 
 export {
-    RandomAccessQueue as default,
-    RandomAccessQueue,
-    RandomAccessQueueLike,
+    RandomAccessLinearQueue as default,
+    RandomAccessLinearQueue,
 }

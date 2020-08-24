@@ -1,2 +1,2 @@
-export { default } from './queue';
-export * from './queue';
+export { default } from './random-access-linear-iterable';
+export * from './interfaces';
