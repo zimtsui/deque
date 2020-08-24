@@ -1,5 +1,5 @@
 export interface PrimitiveQueueInterface<T> {
-    push(...items: T[]): unknown;
+    push(item: T): unknown;
     shift(num?: number): unknown;
 }
 
