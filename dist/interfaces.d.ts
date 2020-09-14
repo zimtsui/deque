@@ -1,4 +1,4 @@
 export interface QueueLike<T> {
-    push(item: T): unknown;
-    shift(num?: number): unknown;
+    push(item: T): void;
+    shift(num?: number): void;
 }
