@@ -1,8 +1,8 @@
 import { QueueLike } from './interfaces';
 declare class LinearQueue<T> implements QueueLike<T> {
-    protected vector: T[];
-    protected front: number;
-    protected rear: number;
+    vector: T[];
+    front: number;
+    rear: number;
     constructor(...items: T[]);
     private shrink;
     push(...items: T[]): void;

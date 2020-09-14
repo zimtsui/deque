@@ -1,9 +1,9 @@
 import { QueueLike } from './interfaces';
 
 class LinearQueue<T> implements QueueLike<T> {
-    protected vector: T[] = [];
-    protected front = 0;
-    protected rear = 0;
+    public vector: T[] = [];
+    public front = 0;
+    public rear = 0;
 
     constructor(...items: T[]) {
         this.push(...items);

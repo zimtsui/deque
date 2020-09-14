@@ -1,8 +1,9 @@
-import Queue from '../../dist/index';
+import { LinearQueue, arrayLikify, iterabilize, } from '../../dist/index';
 import _ from 'lodash';
 import test from 'ava';
 import chai from 'chai';
 const { assert } = chai;
+const Queue = iterabilize(q => q.vector.slice(q.front, q.rear)[Symbol.iterator]())(arrayLikify((q, i) => q.vector[q.front + i], q => q.rear - q.front)(LinearQueue));
 test.serial('test 1', t => {
     console.log = t.log;
     const q = new Queue(1);

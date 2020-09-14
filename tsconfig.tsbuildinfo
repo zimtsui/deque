@@ -212,8 +212,8 @@
         "affectsGlobalScope": false
       },
       "./src/linear.ts": {
-        "version": "24bd1847face10ea7689204f2e66d5b2a026419b2e336dc58dd958f7b6eb6869",
-        "signature": "7e9f63c81c2872c20c719eb76999d47fa310c5c6fc883d7860fce1cf51c573e6",
+        "version": "6aec3b7b163a0eb168f7680430f6e7c35c17052c8a44196b71ec6de4296031f4",
+        "signature": "ca373a6aabf8a2374140a6d704d52c22aa5b3e5e50cc05fe29b00792e38c0341",
         "affectsGlobalScope": false
       },
       "./src/iterabilize.ts": {
@@ -234,11 +234,6 @@
       "./node_modules/@types/color-name/index.d.ts": {
         "version": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
         "signature": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/double-ended-queue/index.d.ts": {
-        "version": "9c4de90f5d5e2b09b05799d655f45515d83638c4d7bde9151be3c236caf8402b",
-        "signature": "9c4de90f5d5e2b09b05799d655f45515d83638c4d7bde9151be3c236caf8402b",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/ts3.1/globals.d.ts": {
@@ -609,14 +604,6 @@
         "./node_modules/@types/node/ts3.4/util.d.ts"
       ],
       "./node_modules/@types/color-name/index.d.ts": [
-        "./node_modules/@types/node/ts3.1/fs.d.ts",
-        "./node_modules/@types/node/ts3.1/process.d.ts",
-        "./node_modules/@types/node/ts3.1/util.d.ts",
-        "./node_modules/@types/node/ts3.4/fs.d.ts",
-        "./node_modules/@types/node/ts3.4/process.d.ts",
-        "./node_modules/@types/node/ts3.4/util.d.ts"
-      ],
-      "./node_modules/@types/double-ended-queue/index.d.ts": [
         "./node_modules/@types/node/ts3.1/fs.d.ts",
         "./node_modules/@types/node/ts3.1/process.d.ts",
         "./node_modules/@types/node/ts3.1/util.d.ts",
@@ -1804,14 +1791,6 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./node_modules/@types/double-ended-queue/index.d.ts": [
-        "./node_modules/@types/node/ts3.1/fs.d.ts",
-        "./node_modules/@types/node/ts3.1/process.d.ts",
-        "./node_modules/@types/node/ts3.1/util.d.ts",
-        "./node_modules/@types/node/ts3.4/fs.d.ts",
-        "./node_modules/@types/node/ts3.4/process.d.ts",
-        "./node_modules/@types/node/ts3.4/util.d.ts"
-      ],
       "./node_modules/@types/glob/index.d.ts": [
         "./node_modules/@types/minimatch/index.d.ts",
         "./node_modules/@types/node/events.d.ts",
@@ -2942,7 +2921,6 @@
     "semanticDiagnosticsPerFile": [
       "./node_modules/@types/chai/index.d.ts",
       "./node_modules/@types/color-name/index.d.ts",
-      "./node_modules/@types/double-ended-queue/index.d.ts",
       "./node_modules/@types/glob/index.d.ts",
       "./node_modules/@types/lodash/common/array.d.ts",
       "./node_modules/@types/lodash/common/collection.d.ts",

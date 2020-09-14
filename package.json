@@ -20,13 +20,11 @@
     },
     "homepage": "https://github.com/zimtsui/queue#readme",
     "devDependencies": {
+        "@types/chai": "^4.2.12",
         "@types/lodash": "^4.14.159",
         "ava": "^3.11.1",
+        "chai": "^4.2.0",
         "lodash": "^4.17.20"
     },
-    "dependencies": {
-        "@types/chai": "^4.2.4",
-        "autobind-decorator": "^2.4.0",
-        "chai": "^4.2.0"
-    }
+    "dependencies": {}
 }
