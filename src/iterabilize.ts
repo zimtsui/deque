@@ -16,7 +16,6 @@ function iterabilize<T, OriginCtor extends ConstructorType<{}>>(
                 }
 
                 public [Symbol.iterator]() {
-                    console.log(1);
                     return getIterator(<InstanceType<OriginCtor>>this);
                 }
             }

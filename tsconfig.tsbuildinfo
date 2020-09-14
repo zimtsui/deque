@@ -217,7 +217,7 @@
         "affectsGlobalScope": false
       },
       "./src/iterabilize.ts": {
-        "version": "1e04a53be23cfe9ada8326b70fcb2cb611039269fa230652cf7da72b33db0ccf",
+        "version": "e01978dde91555fd5126445019663ee04c5037d9c52d1025822f0c6ec8ccf66e",
         "signature": "f2ddbbf2a1d5ab24684704dd00f30aacf886238146cbb73b7d9b8a7d822eaa0a",
         "affectsGlobalScope": false
       },

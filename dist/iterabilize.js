@@ -6,7 +6,6 @@ function iterabilize(getIterator) {
                     super(...args);
                 }
                 [Symbol.iterator]() {
-                    console.log(1);
                     return getIterator(this);
                 }
             };
