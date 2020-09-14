@@ -3,10 +3,5 @@ interface ConstructorType<T> {
 }
 declare type GetItemFromIndex<T, Container> = (dS: Container, index: number) => T | undefined;
 declare type GetLength<Container> = (dS: Container) => number;
-declare function arrayLikify<T, ContainerCtor extends ConstructorType<{}>>(getItemFromIndex: GetItemFromIndex<T, InstanceType<ContainerCtor>>, getLength: GetLength<InstanceType<ContainerCtor>>): (Origin: ContainerCtor) => {
-    new (...args: any[]): {
-        [index: number]: T;
-        readonly length: number;
-    };
-} & ContainerCtor;
+declare function arrayLikify<T, OriginCtor extends ConstructorType<{}>>(getItemFromIndex: GetItemFromIndex<T, InstanceType<OriginCtor>>, getLength: GetLength<InstanceType<OriginCtor>>): (Origin: OriginCtor) => ConstructorType<InstanceType<OriginCtor> & ArrayLike<T>>;
 export { arrayLikify as default, arrayLikify, };

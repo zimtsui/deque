@@ -202,8 +202,8 @@
         "affectsGlobalScope": true
       },
       "./src/array-likify.ts": {
-        "version": "3ce2442fed54a24fe2d169cf3097b2ca1b6d39b3b90d28f8259ca99bd4c4c067",
-        "signature": "22601ae60ee7df0c59f39d8607bdb90a9c882ae0b18c73de5c17a03d6ca65380",
+        "version": "2e5bdcb953a4b8ae58afb985cb4817731cd3886b21e590b671347a871e4a52f8",
+        "signature": "86b2bd61e0ee7c295133f612cf26bd292df0fb7671b198d48ba997e0d424be90",
         "affectsGlobalScope": false
       },
       "./src/interfaces.ts": {
@@ -217,8 +217,8 @@
         "affectsGlobalScope": false
       },
       "./src/iterabilize.ts": {
-        "version": "f5e317c384e2feec9d4d5e10f0b65e3dbf28cebbb7a8700dd456a63a0357c744",
-        "signature": "d06f6f1d181b9dd96b8822819a9cb60b07782fbedfae80d92dd237ee96c7d521",
+        "version": "1e04a53be23cfe9ada8326b70fcb2cb611039269fa230652cf7da72b33db0ccf",
+        "signature": "f2ddbbf2a1d5ab24684704dd00f30aacf886238146cbb73b7d9b8a7d822eaa0a",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {

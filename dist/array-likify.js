@@ -10,8 +10,11 @@ function arrayLikify(getItemFromIndex, getLength) {
                             if (!Number.isNaN(index))
                                 field = index;
                         }
-                        if (typeof field === 'number')
+                        if (getItemFromIndex && typeof field === 'number')
                             return getItemFromIndex(target, field);
+                        else if (getLength && field === 'length') {
+                            return getLength(target);
+                        }
                         else {
                             const returnValue = Reflect.get(target, field, target);
                             if (returnValue === target)
@@ -21,9 +24,6 @@ function arrayLikify(getItemFromIndex, getLength) {
                         }
                     }
                 });
-            }
-            get length() {
-                return getLength(this);
             }
         };
     };
