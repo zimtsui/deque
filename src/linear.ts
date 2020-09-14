@@ -1,6 +1,6 @@
-import { PrimitiveQueueInterface } from './interfaces';
+import { QueueLike } from './interfaces';
 
-class LinearQueue<T> implements PrimitiveQueueInterface<T> {
+class LinearQueue<T> implements QueueLike<T> {
     protected vector: T[] = [];
     protected front = 0;
     protected rear = 0;
