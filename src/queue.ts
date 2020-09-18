@@ -5,7 +5,7 @@ export interface QueueLike<T> {
     shift(): void;
 }
 
-class IADeque<T> extends Deque<T> implements QueueLike<T> {
+class Queue<T> extends Deque<T> implements QueueLike<T> {
     [index: number]: T;
     public [Symbol.iterator]: () => Iterator<T>;
 
@@ -13,9 +13,9 @@ class IADeque<T> extends Deque<T> implements QueueLike<T> {
         super();
         return new Proxy(this, {
             get(
-                target: IADeque<T>,
+                target: Queue<T>,
                 field: string | symbol | number,
-                receiver: IADeque<T>
+                receiver: Queue<T>
             ) {
                 if (typeof field === 'string') {
                     const index = Number.parseInt(field);
@@ -31,6 +31,6 @@ class IADeque<T> extends Deque<T> implements QueueLike<T> {
 }
 
 export {
-    IADeque as default,
-    IADeque,
+    Queue as default,
+    Queue,
 }

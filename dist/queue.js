@@ -1,5 +1,5 @@
 import Deque from 'double-ended-queue';
-class IADeque extends Deque {
+class Queue extends Deque {
     constructor() {
         super();
         return new Proxy(this, {
@@ -19,5 +19,5 @@ class IADeque extends Deque {
         });
     }
 }
-export { IADeque as default, IADeque, };
+export { Queue as default, Queue, };
 //# sourceMappingURL=queue.js.map
