@@ -1,19 +1,21 @@
-import { LinearQueue, arrayLikify, iterabilize, } from '../../dist/index';
+import { IADeque, } from '../../dist/index';
+// import Deque from 'double-ended-queue';
 import _ from 'lodash';
 import test from 'ava';
 import chai from 'chai';
 const { assert } = chai;
-const Queue = iterabilize(q => q.vector.slice(q.front, q.rear)[Symbol.iterator]())(arrayLikify((q, i) => q.vector[q.front + i], q => q.rear - q.front)(LinearQueue));
 test.serial('test 1', t => {
     console.log = t.log;
-    const q = new Queue(1);
+    const q = new IADeque();
+    q.push(1);
     assert.deepStrictEqual([...q], [1]);
     q.push(2, 3, 4, 5, 6, 7, 8);
     assert.deepStrictEqual([...q], [1, 2, 3, 4, 5, 6, 7, 8]);
-    q.shift(1);
-    q.shift(1);
+    q.shift();
+    q.shift();
     assert.deepStrictEqual([...q], [3, 4, 5, 6, 7, 8]);
-    q.shiftWhile(x => x < 5);
+    while (q[0] < 5)
+        q.shift();
     assert.deepStrictEqual([...q], [5, 6, 7, 8]);
     assert(q[0] === 5);
     assert(q[q.length - 1] === 8);

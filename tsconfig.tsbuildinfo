@@ -201,29 +201,19 @@
         "signature": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
         "affectsGlobalScope": true
       },
-      "./src/array-likify.ts": {
-        "version": "2e5bdcb953a4b8ae58afb985cb4817731cd3886b21e590b671347a871e4a52f8",
-        "signature": "86b2bd61e0ee7c295133f612cf26bd292df0fb7671b198d48ba997e0d424be90",
+      "./node_modules/@types/double-ended-queue/index.d.ts": {
+        "version": "9c4de90f5d5e2b09b05799d655f45515d83638c4d7bde9151be3c236caf8402b",
+        "signature": "9c4de90f5d5e2b09b05799d655f45515d83638c4d7bde9151be3c236caf8402b",
         "affectsGlobalScope": false
       },
-      "./src/interfaces.ts": {
-        "version": "f34e3bb31e270ecf8b2d29e6d29ce31a85e3d720f2cc7fb6e85d61761026bb66",
-        "signature": "f34e3bb31e270ecf8b2d29e6d29ce31a85e3d720f2cc7fb6e85d61761026bb66",
-        "affectsGlobalScope": false
-      },
-      "./src/linear.ts": {
-        "version": "6aec3b7b163a0eb168f7680430f6e7c35c17052c8a44196b71ec6de4296031f4",
-        "signature": "ca373a6aabf8a2374140a6d704d52c22aa5b3e5e50cc05fe29b00792e38c0341",
-        "affectsGlobalScope": false
-      },
-      "./src/iterabilize.ts": {
-        "version": "e01978dde91555fd5126445019663ee04c5037d9c52d1025822f0c6ec8ccf66e",
-        "signature": "f2ddbbf2a1d5ab24684704dd00f30aacf886238146cbb73b7d9b8a7d822eaa0a",
+      "./src/queue.ts": {
+        "version": "70ae56ef806ec4306983e745276f4e9ff55aaf9af8d6d8c03a39009de71aa7d6",
+        "signature": "6a8b536673862114c459946c33ee3d60fb2cefb6417d74876614cf626071d451",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "83ba81b5e1556e1b4d4159c8600c805e96772461c75131ce5bfc7dc2328b7bae",
-        "signature": "83ba81b5e1556e1b4d4159c8600c805e96772461c75131ce5bfc7dc2328b7bae",
+        "version": "cc3e2dd66510aa2dcef07a7578af94b74bce86072cf0c7bb6e5600fceb4a56d4",
+        "signature": "cc3e2dd66510aa2dcef07a7578af94b74bce86072cf0c7bb6e5600fceb4a56d4",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/chai/index.d.ts": {
@@ -611,6 +601,14 @@
         "./node_modules/@types/node/ts3.4/process.d.ts",
         "./node_modules/@types/node/ts3.4/util.d.ts"
       ],
+      "./node_modules/@types/double-ended-queue/index.d.ts": [
+        "./node_modules/@types/node/ts3.1/fs.d.ts",
+        "./node_modules/@types/node/ts3.1/process.d.ts",
+        "./node_modules/@types/node/ts3.1/util.d.ts",
+        "./node_modules/@types/node/ts3.4/fs.d.ts",
+        "./node_modules/@types/node/ts3.4/process.d.ts",
+        "./node_modules/@types/node/ts3.4/util.d.ts"
+      ],
       "./node_modules/@types/glob/index.d.ts": [
         "./node_modules/@types/minimatch/index.d.ts",
         "./node_modules/@types/node/index.d.ts",
@@ -1408,14 +1406,6 @@
         "./node_modules/@types/node/ts3.4/process.d.ts",
         "./node_modules/@types/node/ts3.4/util.d.ts"
       ],
-      "./src/array-likify.ts": [
-        "./node_modules/@types/node/ts3.1/fs.d.ts",
-        "./node_modules/@types/node/ts3.1/process.d.ts",
-        "./node_modules/@types/node/ts3.1/util.d.ts",
-        "./node_modules/@types/node/ts3.4/fs.d.ts",
-        "./node_modules/@types/node/ts3.4/process.d.ts",
-        "./node_modules/@types/node/ts3.4/util.d.ts"
-      ],
       "./src/index.ts": [
         "./node_modules/@types/node/ts3.1/fs.d.ts",
         "./node_modules/@types/node/ts3.1/process.d.ts",
@@ -1423,35 +1413,16 @@
         "./node_modules/@types/node/ts3.4/fs.d.ts",
         "./node_modules/@types/node/ts3.4/process.d.ts",
         "./node_modules/@types/node/ts3.4/util.d.ts",
-        "./src/array-likify.ts",
-        "./src/interfaces.ts",
-        "./src/iterabilize.ts",
-        "./src/linear.ts"
+        "./src/queue.ts"
       ],
-      "./src/interfaces.ts": [
+      "./src/queue.ts": [
+        "./node_modules/@types/double-ended-queue/index.d.ts",
         "./node_modules/@types/node/ts3.1/fs.d.ts",
         "./node_modules/@types/node/ts3.1/process.d.ts",
         "./node_modules/@types/node/ts3.1/util.d.ts",
         "./node_modules/@types/node/ts3.4/fs.d.ts",
         "./node_modules/@types/node/ts3.4/process.d.ts",
         "./node_modules/@types/node/ts3.4/util.d.ts"
-      ],
-      "./src/iterabilize.ts": [
-        "./node_modules/@types/node/ts3.1/fs.d.ts",
-        "./node_modules/@types/node/ts3.1/process.d.ts",
-        "./node_modules/@types/node/ts3.1/util.d.ts",
-        "./node_modules/@types/node/ts3.4/fs.d.ts",
-        "./node_modules/@types/node/ts3.4/process.d.ts",
-        "./node_modules/@types/node/ts3.4/util.d.ts"
-      ],
-      "./src/linear.ts": [
-        "./node_modules/@types/node/ts3.1/fs.d.ts",
-        "./node_modules/@types/node/ts3.1/process.d.ts",
-        "./node_modules/@types/node/ts3.1/util.d.ts",
-        "./node_modules/@types/node/ts3.4/fs.d.ts",
-        "./node_modules/@types/node/ts3.4/process.d.ts",
-        "./node_modules/@types/node/ts3.4/util.d.ts",
-        "./src/interfaces.ts"
       ],
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
         "./node_modules/@types/node/ts3.1/fs.d.ts",
@@ -1791,6 +1762,14 @@
         "./node_modules/@types/node/ts3.4/process.d.ts",
         "./node_modules/@types/node/ts3.4/util.d.ts"
       ],
+      "./node_modules/@types/double-ended-queue/index.d.ts": [
+        "./node_modules/@types/node/ts3.1/fs.d.ts",
+        "./node_modules/@types/node/ts3.1/process.d.ts",
+        "./node_modules/@types/node/ts3.1/util.d.ts",
+        "./node_modules/@types/node/ts3.4/fs.d.ts",
+        "./node_modules/@types/node/ts3.4/process.d.ts",
+        "./node_modules/@types/node/ts3.4/util.d.ts"
+      ],
       "./node_modules/@types/glob/index.d.ts": [
         "./node_modules/@types/minimatch/index.d.ts",
         "./node_modules/@types/node/index.d.ts",
@@ -2589,13 +2568,10 @@
         "./node_modules/@types/node/ts3.4/util.d.ts"
       ],
       "./src/index.ts": [
-        "./src/array-likify.ts",
-        "./src/interfaces.ts",
-        "./src/iterabilize.ts",
-        "./src/linear.ts"
+        "./src/queue.ts"
       ],
-      "./src/linear.ts": [
-        "./src/interfaces.ts"
+      "./src/queue.ts": [
+        "./node_modules/@types/double-ended-queue/index.d.ts"
       ],
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
         "./node_modules/@types/node/ts3.1/fs.d.ts",
@@ -2921,6 +2897,7 @@
     "semanticDiagnosticsPerFile": [
       "./node_modules/@types/chai/index.d.ts",
       "./node_modules/@types/color-name/index.d.ts",
+      "./node_modules/@types/double-ended-queue/index.d.ts",
       "./node_modules/@types/glob/index.d.ts",
       "./node_modules/@types/lodash/common/array.d.ts",
       "./node_modules/@types/lodash/common/collection.d.ts",
@@ -2989,11 +2966,8 @@
       "./node_modules/@types/node/ts3.6/globals.global.d.ts",
       "./node_modules/@types/node/ts3.6/wasi.d.ts",
       "./node_modules/@types/normalize-package-data/index.d.ts",
-      "./src/array-likify.ts",
       "./src/index.ts",
-      "./src/interfaces.ts",
-      "./src/iterabilize.ts",
-      "./src/linear.ts",
+      "./src/queue.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts",
       "../../../../usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts",

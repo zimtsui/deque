@@ -26,5 +26,8 @@
         "chai": "^4.2.0",
         "lodash": "^4.17.20"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@types/double-ended-queue": "^2.1.1",
+        "double-ended-queue": "^2.1.0-0"
+    }
 }

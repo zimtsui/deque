@@ -1,6 +1,3 @@
-export { default } from './linear';
-export * from './interfaces';
-export * from './linear';
-export * from './iterabilize';
-export * from './array-likify';
+export { default } from './queue';
+export * from './queue';
 //# sourceMappingURL=index.js.map

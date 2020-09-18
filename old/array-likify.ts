@@ -9,8 +9,8 @@ type GetLength<Container> =
     (dS: Container) => number;
 
 function arrayLikify<T, OriginCtor extends ConstructorType<{}>>(
-    getItemFromIndex: GetItemFromIndex<T, InstanceType<OriginCtor>>,
-    getLength: GetLength<InstanceType<OriginCtor>>,
+    getItemFromIndex?: GetItemFromIndex<T, InstanceType<OriginCtor>>,
+    getLength?: GetLength<InstanceType<OriginCtor>>,
 ) {
     return function (Origin: OriginCtor) {
         return <ConstructorType<InstanceType<OriginCtor> & ArrayLike<T>>><unknown>
