@@ -1,6 +1,4 @@
-import {
-    IADeque,
-} from '../../dist/index';
+import Queue from '../../dist/index';
 // import Deque from 'double-ended-queue';
 import _ from 'lodash';
 import test from 'ava';
@@ -9,7 +7,7 @@ const { assert } = chai;
 
 test.serial('test 1', t => {
     console.log = t.log;
-    const q = new IADeque<number>();
+    const q = new Queue<number>();
     q.push(1);
     assert.deepStrictEqual([...q], [1]);
     q.push(2, 3, 4, 5, 6, 7, 8);

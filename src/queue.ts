@@ -1,6 +1,8 @@
 import Deque from 'double-ended-queue';
 
 export interface QueueLike<T> {
+    [index: number]: T;
+    [Symbol.iterator]: () => Iterator<T>;
     push(item: T): void;
     shift(): void;
 }
