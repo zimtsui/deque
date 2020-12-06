@@ -207,7 +207,7 @@
         "affectsGlobalScope": false
       },
       "./src/queue.ts": {
-        "version": "3d3ecbf7bd082a258e2ad522d96b8d20ac054a1ac5dd20546f5f34c58ae910a3",
+        "version": "262dcb5222bd0c1082fde3c8937b02a16701b4462b313e20ecdfa13a91ed0900",
         "signature": "a0a37131ff520b645e40fb93b9914523396aff5c5b43923f71c9a3a734ade01a",
         "affectsGlobalScope": false
       },

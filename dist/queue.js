@@ -13,8 +13,13 @@ class Queue extends Deque {
                     return target.get(field);
                 else if (field === Symbol.iterator)
                     return target.toArray()[Symbol.iterator];
-                else
-                    return Reflect.get(target, field, receiver);
+                else {
+                    const returnValue = Reflect.get(target, field, receiver);
+                    if (returnValue === target)
+                        return receiver;
+                    else
+                        return returnValue;
+                }
             }
         });
     }
