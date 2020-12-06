@@ -1,6 +1,6 @@
 import Deque from 'double-ended-queue';
 
-export interface QueueLike<T> {
+export interface QueueLike<T> extends ArrayLike<T>, Iterable<T> {
     [index: number]: T;
     [Symbol.iterator]: () => Iterator<T>;
     push(item: T): void;
