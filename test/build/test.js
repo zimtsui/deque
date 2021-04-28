@@ -1,11 +1,10 @@
-import Queue from '../../dist/index';
+import Queue from '../../dist/queue';
 // import Deque from 'double-ended-queue';
 import _ from 'lodash';
 import test from 'ava';
 import chai from 'chai';
 const { assert } = chai;
 test.serial('test 1', t => {
-    console.log = t.log;
     const q = new Queue();
     q.push(1);
     assert.deepStrictEqual([...q], [1]);

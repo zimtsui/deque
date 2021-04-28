@@ -26,10 +26,8 @@ class Queue<T> extends Deque<T> implements QueueLike<T> {
                 if (typeof field === 'number') return target.get(field);
                 else if (field === Symbol.iterator)
                     return target.toArray()[Symbol.iterator];
-                else {
-                    const returnValue = Reflect.get(target, field, receiver);
-                    if (returnValue === target) return receiver; else return returnValue;
-                }
+                else
+                    return Reflect.get(target, field, receiver);
             }
         });
     }
