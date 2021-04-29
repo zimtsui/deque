@@ -1,24 +1,16 @@
 {
-    "name": "queue",
+    "name": "deque",
     "version": "0.0.1",
     "description": "",
     "type": "module",
-    "main": "./dist/queue.js",
-    "types": "./dist/queue.d.ts",
+    "main": "./dist/deque.js",
+    "types": "./dist/deque.d.ts",
     "scripts": {
         "test": "tsc -b ./test/src && ava",
         "build": "tsc -b ./src"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/zimtsui/queue.git"
-    },
     "author": "Zim",
     "license": "SEE LICENSE IN ./LICENSE",
-    "bugs": {
-        "url": "https://github.com/zimtsui/queue/issues"
-    },
-    "homepage": "https://github.com/zimtsui/queue#readme",
     "devDependencies": {
         "@types/chai": "^4.2.14",
         "@types/lodash": "^4.14.165",

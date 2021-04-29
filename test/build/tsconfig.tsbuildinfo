@@ -211,14 +211,9 @@
         "signature": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
         "affectsGlobalScope": true
       },
-      "../../node_modules/@types/double-ended-queue/index.d.ts": {
-        "version": "9c4de90f5d5e2b09b05799d655f45515d83638c4d7bde9151be3c236caf8402b",
-        "signature": "9c4de90f5d5e2b09b05799d655f45515d83638c4d7bde9151be3c236caf8402b",
-        "affectsGlobalScope": false
-      },
-      "../../dist/queue.d.ts": {
-        "version": "a0a37131ff520b645e40fb93b9914523396aff5c5b43923f71c9a3a734ade01a",
-        "signature": "a0a37131ff520b645e40fb93b9914523396aff5c5b43923f71c9a3a734ade01a",
+      "../../dist/deque.d.ts": {
+        "version": "760aefff204d912fb51671dfa0c5a06b967bac26310a25c0f535a63480319791",
+        "signature": "760aefff204d912fb51671dfa0c5a06b967bac26310a25c0f535a63480319791",
         "affectsGlobalScope": false
       },
       "../../node_modules/@types/lodash/common/common.d.ts": {
@@ -297,8 +292,13 @@
         "affectsGlobalScope": true
       },
       "../src/test.ts": {
-        "version": "4aa5a4ce9f40f84905a768b872c1d5a5503d28e9b6d6b17da380599567c3eec9",
+        "version": "8b4eccbb23d21019a951ca76ab47e9d020773f1effa1edd7b8e1d5b413d0c168",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/double-ended-queue/index.d.ts": {
+        "version": "9c4de90f5d5e2b09b05799d655f45515d83638c4d7bde9151be3c236caf8402b",
+        "signature": "9c4de90f5d5e2b09b05799d655f45515d83638c4d7bde9151be3c236caf8402b",
         "affectsGlobalScope": false
       },
       "../../node_modules/@types/normalize-package-data/index.d.ts": {
@@ -324,9 +324,6 @@
       "configFilePath": "../src/tsconfig.json"
     },
     "referencedMap": {
-      "../../dist/queue.d.ts": [
-        "../../node_modules/@types/double-ended-queue/index.d.ts"
-      ],
       "../../node_modules/@types/lodash/common/array.d.ts": [
         "../../node_modules/@types/lodash/common/collection.d.ts",
         "../../node_modules/@types/lodash/common/common.d.ts",
@@ -510,16 +507,13 @@
         "../../node_modules/@types/lodash/common/util.d.ts"
       ],
       "../src/test.ts": [
-        "../../dist/queue.d.ts",
+        "../../dist/deque.d.ts",
         "../../node_modules/@types/chai/index.d.ts",
         "../../node_modules/@types/lodash/index.d.ts",
         "../../node_modules/ava/index.d.ts"
       ]
     },
     "exportedModulesMap": {
-      "../../dist/queue.d.ts": [
-        "../../node_modules/@types/double-ended-queue/index.d.ts"
-      ],
       "../../node_modules/@types/lodash/common/array.d.ts": [
         "../../node_modules/@types/lodash/common/collection.d.ts",
         "../../node_modules/@types/lodash/common/common.d.ts",
@@ -704,7 +698,7 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../../dist/queue.d.ts",
+      "../../dist/deque.d.ts",
       "../../node_modules/@types/chai/index.d.ts",
       "../../node_modules/@types/double-ended-queue/index.d.ts",
       "../../node_modules/@types/lodash/common/array.d.ts",
