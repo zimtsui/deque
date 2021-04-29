@@ -212,8 +212,8 @@
         "affectsGlobalScope": true
       },
       "../../dist/deque.d.ts": {
-        "version": "760aefff204d912fb51671dfa0c5a06b967bac26310a25c0f535a63480319791",
-        "signature": "760aefff204d912fb51671dfa0c5a06b967bac26310a25c0f535a63480319791",
+        "version": "bf02ae16a3bfed8c3c211d0b28479dbfb1a94b8c0a405c6e7b6867c4e009ce09",
+        "signature": "bf02ae16a3bfed8c3c211d0b28479dbfb1a94b8c0a405c6e7b6867c4e009ce09",
         "affectsGlobalScope": false
       },
       "../../node_modules/@types/lodash/common/common.d.ts": {
@@ -292,7 +292,7 @@
         "affectsGlobalScope": true
       },
       "../src/test.ts": {
-        "version": "8b4eccbb23d21019a951ca76ab47e9d020773f1effa1edd7b8e1d5b413d0c168",
+        "version": "8691e41198c1411f0425966fca2fedf977a3bb9c169dd182226217548088e1dd",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },

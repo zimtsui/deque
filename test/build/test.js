@@ -7,7 +7,8 @@ test.serial('test 1', t => {
     const q = createDeque();
     q.push(1);
     assert.deepStrictEqual([...q], [1]);
-    q.push(2, 3, 4, 5, 6, 7, 8);
+    for (const x of [2, 3, 4, 5, 6, 7, 8])
+        q.push(x);
     assert.deepStrictEqual([...q], [1, 2, 3, 4, 5, 6, 7, 8]);
     q.shift();
     q.shift();

@@ -1,12 +1,12 @@
 import UnderlyingDeque from 'double-ended-queue';
 
-export interface DequeLike<T> extends Iterable<T> {
+interface DequeLike<T> extends Iterable<T> {
     (index: number): T;
     [Symbol.iterator]: () => Iterator<T>;
-    push(...items: T[]): void;
+    push(item: T): void;
     pop(): T;
     shift(): T;
-    unshift(...items: T[]): void;
+    unshift(item: T): void;
     length: number;
 }
 
@@ -39,4 +39,5 @@ function createDeque<T>(initial: T[] = []): DequeLike<T> {
 export {
     createDeque as default,
     createDeque,
+    DequeLike,
 }

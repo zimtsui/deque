@@ -217,8 +217,8 @@
         "affectsGlobalScope": false
       },
       "../src/deque.ts": {
-        "version": "9f098a32080a9b2271d3e165dd4f703ed12471497ad9aa2f8c3040e058c76b58",
-        "signature": "760aefff204d912fb51671dfa0c5a06b967bac26310a25c0f535a63480319791",
+        "version": "d359525ad0f97c527d6705128361350158dad5c53cdc477ce31eba6fcf64bfce",
+        "signature": "bf02ae16a3bfed8c3c211d0b28479dbfb1a94b8c0a405c6e7b6867c4e009ce09",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/chai/index.d.ts": {
