@@ -2,12 +2,11 @@
     "name": "deque",
     "version": "0.0.1",
     "description": "",
-    "type": "module",
-    "main": "./dist/deque.js",
-    "types": "./dist/deque.d.ts",
+    "main": "./build/deque.js",
+    "types": "./build/deque.d.ts",
     "scripts": {
-        "test": "tsc -b ./test/src && ava",
-        "build": "tsc -b ./src"
+        "test": "tsc -b ./test/src/tsconfig.json && ava",
+        "build": "tsc -b ./src/tsconfig.json"
     },
     "author": "Zim",
     "license": "SEE LICENSE IN ./LICENSE",

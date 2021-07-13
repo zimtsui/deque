@@ -8,4 +8,4 @@ interface DequeLike<T> extends Iterable<T> {
     length: number;
 }
 declare function createDeque<T>(initial?: T[]): DequeLike<T>;
-export { createDeque as default, createDeque, DequeLike, };
+export { createDeque, DequeLike, };

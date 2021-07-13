@@ -1,4 +1,4 @@
-import UnderlyingDeque from 'double-ended-queue';
+import UnderlyingDeque = require('double-ended-queue');
 
 interface DequeLike<T> extends Iterable<T> {
     (index: number): T;
@@ -37,7 +37,6 @@ function createDeque<T>(initial: T[] = []): DequeLike<T> {
 }
 
 export {
-    createDeque as default,
     createDeque,
     DequeLike,
 }

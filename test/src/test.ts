@@ -1,7 +1,7 @@
-import { createDeque } from '../../dist/deque';
-import _ from 'lodash';
+import { createDeque } from '../..';
+import _ = require('lodash');
 import test from 'ava';
-import chai from 'chai';
+import chai = require('chai');
 const { assert } = chai;
 
 test.serial('test 1', t => {

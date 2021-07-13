@@ -1,10 +1,12 @@
-import { createDeque } from '../../dist/deque';
-import _ from 'lodash';
-import test from 'ava';
-import chai from 'chai';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = require("../..");
+const _ = require("lodash");
+const ava_1 = require("ava");
+const chai = require("chai");
 const { assert } = chai;
-test.serial('test 1', t => {
-    const q = createDeque();
+ava_1.default.serial('test 1', t => {
+    const q = __1.createDeque();
     q.push(1);
     assert.deepStrictEqual([...q], [1]);
     for (const x of [2, 3, 4, 5, 6, 7, 8])

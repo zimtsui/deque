@@ -1,4 +1,7 @@
-import UnderlyingDeque from 'double-ended-queue';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createDeque = void 0;
+const UnderlyingDeque = require("double-ended-queue");
 function createDeque(initial = []) {
     const u = new UnderlyingDeque(initial);
     const deque = ((i) => {
@@ -27,5 +30,5 @@ function createDeque(initial = []) {
     });
     return deque;
 }
-export { createDeque as default, createDeque, };
+exports.createDeque = createDeque;
 //# sourceMappingURL=deque.js.map
