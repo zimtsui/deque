@@ -1,11 +1,13 @@
-export interface DequeLike<T> extends Iterable<T> {
+export interface QueueLike<T> extends Iterable<T> {
     (index: number): T;
     [Symbol.iterator]: () => Iterator<T>;
     push(item: T): void;
-    pop(): T;
     shift(): T;
-    unshift(item: T): void;
     length: number;
+}
+export interface DequeLike<T> extends QueueLike<T> {
+    pop(): T;
+    unshift(item: T): void;
 }
 /**
  * This is a factory function. Do not prepend a "new".
