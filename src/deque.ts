@@ -1,6 +1,6 @@
 import UnderlyingDeque = require('double-ended-queue');
 
-interface DequeLike<T> extends Iterable<T> {
+export interface DequeLike<T> extends Iterable<T> {
     (index: number): T;
     [Symbol.iterator]: () => Iterator<T>;
     push(item: T): void;
@@ -10,7 +10,10 @@ interface DequeLike<T> extends Iterable<T> {
     length: number;
 }
 
-function createDeque<T>(initial: T[] = []): DequeLike<T> {
+/**
+ * This is a factory function. Do not prepend a "new".
+ */
+export function Deque<T>(initial: T[] = []): DequeLike<T> {
     const u = new UnderlyingDeque<T>(initial);
     const deque = <DequeLike<T>>((i: number): T => {
         const item = u.get(i);
@@ -37,6 +40,5 @@ function createDeque<T>(initial: T[] = []): DequeLike<T> {
 }
 
 export {
-    createDeque,
-    DequeLike,
+    Deque as default,
 }

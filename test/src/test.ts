@@ -1,11 +1,11 @@
-import { createDeque } from '../..';
+import { Deque } from '../..';
 import _ = require('lodash');
 import test from 'ava';
 import chai = require('chai');
 const { assert } = chai;
 
 test.serial('test 1', t => {
-    const q = createDeque<number>();
+    const q = Deque<number>();
     q.push(1);
     assert.deepStrictEqual([...q], [1]);
     for (const x of [2, 3, 4, 5, 6, 7, 8]) q.push(x);

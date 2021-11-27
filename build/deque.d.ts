@@ -1,4 +1,4 @@
-interface DequeLike<T> extends Iterable<T> {
+export interface DequeLike<T> extends Iterable<T> {
     (index: number): T;
     [Symbol.iterator]: () => Iterator<T>;
     push(item: T): void;
@@ -7,5 +7,8 @@ interface DequeLike<T> extends Iterable<T> {
     unshift(item: T): void;
     length: number;
 }
-declare function createDeque<T>(initial?: T[]): DequeLike<T>;
-export { createDeque, DequeLike, };
+/**
+ * This is a factory function. Do not prepend a "new".
+ */
+export declare function Deque<T>(initial?: T[]): DequeLike<T>;
+export { Deque as default, };

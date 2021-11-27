@@ -1,8 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createDeque = void 0;
+exports.default = exports.Deque = void 0;
 const UnderlyingDeque = require("double-ended-queue");
-function createDeque(initial = []) {
+/**
+ * This is a factory function. Do not prepend a "new".
+ */
+function Deque(initial = []) {
     const u = new UnderlyingDeque(initial);
     const deque = ((i) => {
         const item = u.get(i);
@@ -30,5 +33,6 @@ function createDeque(initial = []) {
     });
     return deque;
 }
-exports.createDeque = createDeque;
+exports.Deque = Deque;
+exports.default = Deque;
 //# sourceMappingURL=deque.js.map
