@@ -1,6 +1,8 @@
 import UnderlyingDeque = require('double-ended-queue');
 
-export interface QueueLike<T> extends Iterable<T> {
+export type ElementType = null | number | symbol | string | object;
+
+export interface QueueLike<T extends ElementType> extends Iterable<T> {
     (index: number): T;
     [Symbol.iterator]: () => Iterator<T>;
     push(item: T): void;
@@ -8,7 +10,7 @@ export interface QueueLike<T> extends Iterable<T> {
     length: number;
 }
 
-export interface DequeLike<T> extends QueueLike<T> {
+export interface DequeLike<T extends ElementType> extends QueueLike<T> {
     pop(): T;
     unshift(item: T): void;
 }
@@ -16,7 +18,7 @@ export interface DequeLike<T> extends QueueLike<T> {
 /**
  * This is a factory function. Do not prepend a "new".
  */
-export function Deque<T>(initial: T[] = []): DequeLike<T> {
+export function Deque<T extends ElementType>(initial: T[] = []): DequeLike<T> {
     const u = new UnderlyingDeque<T>(initial);
     const deque = <DequeLike<T>>((i: number): T => {
         const item = u.get(i);
