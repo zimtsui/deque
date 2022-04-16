@@ -5,7 +5,7 @@ import chai = require('chai');
 const { assert } = chai;
 
 test.serial('test 1', t => {
-    const q = Deque<number>();
+    const q = Deque.create<number>();
     q.push(1);
     assert.deepStrictEqual([...q], [1]);
     for (const x of [2, 3, 4, 5, 6, 7, 8]) q.push(x);

@@ -6,7 +6,7 @@ const ava_1 = require("ava");
 const chai = require("chai");
 const { assert } = chai;
 ava_1.default.serial('test 1', t => {
-    const q = (0, __1.Deque)();
+    const q = __1.Deque.create();
     q.push(1);
     assert.deepStrictEqual([...q], [1]);
     for (const x of [2, 3, 4, 5, 6, 7, 8])
