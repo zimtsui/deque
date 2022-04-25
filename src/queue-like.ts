@@ -1,6 +1,5 @@
-export type Defined = null | number | symbol | string | object | boolean;
 
-export interface QueueLike<T extends Defined> {
+export interface QueueLike<T> {
 	push(item: T): void;
 	shift(): T;
 	getLength(): number;

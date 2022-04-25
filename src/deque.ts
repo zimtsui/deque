@@ -1,15 +1,14 @@
 import DEQ = require('double-ended-queue');
 import { DequeLike } from './deque-like';
-import {
-	Defined,
-	NoEnoughElem,
-} from './queue-like';
+import { NoEnoughElem } from './queue-like';
 import {
 	RandomAccess,
 	IndexOutOfRange,
 } from './random-access';
 import assert = require('assert');
 
+
+export type Defined = null | number | symbol | string | object | boolean;
 
 export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
 	private dEQ: DEQ<T>;

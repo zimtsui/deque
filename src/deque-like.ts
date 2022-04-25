@@ -1,7 +1,7 @@
-import { QueueLike, Defined } from './queue-like';
+import { QueueLike } from './queue-like';
 
 
-export interface DequeLike<T extends Defined>
+export interface DequeLike<T>
 	extends QueueLike<T>, Iterable<T> {
 
 	pop(): T;
