@@ -1,5 +1,5 @@
 export declare type Defined = null | number | symbol | string | object | boolean;
-export interface QueueLike<T extends Defined> extends Iterable<T> {
+export interface QueueLike<T extends Defined> {
     push(...items: T[]): void;
     shift(count?: number): T;
     getLength(): number;

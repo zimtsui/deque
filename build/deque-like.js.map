@@ -1,1 +1,1 @@
-{"version":3,"file":"deque-like.js","sourceRoot":"","sources":["../src/deque-like.ts"],"names":[],"mappings":";;;AAQA,MAAa,cAAe,SAAQ,KAAK;IACxC;QACC,KAAK,CAAC,yBAAyB,CAAC,CAAC;IAClC,CAAC;CACD;AAJD,wCAIC"}
+{"version":3,"file":"deque-like.js","sourceRoot":"","sources":["../src/deque-like.ts"],"names":[],"mappings":";;;AAUA,MAAa,cAAe,SAAQ,KAAK;IACxC;QACC,KAAK,CAAC,yBAAyB,CAAC,CAAC;IAClC,CAAC;CACD;AAJD,wCAIC"}
