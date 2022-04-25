@@ -12,6 +12,10 @@ export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
 		this.dEQ = new DEQ([...initials]);
 	}
 
+	public getFront(): T {
+		return this.i(0);
+	}
+
 	public i(index: number): T {
 		assert(-this.dEQ.length <= index && index < this.dEQ.length);
 		return this.dEQ.get(index)!;

@@ -7,6 +7,9 @@ class Deque {
     constructor(initials = []) {
         this.dEQ = new DEQ([...initials]);
     }
+    getFront() {
+        return this.i(0);
+    }
     i(index) {
         assert(-this.dEQ.length <= index && index < this.dEQ.length);
         return this.dEQ.get(index);
