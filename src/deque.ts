@@ -21,12 +21,12 @@ export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
 		return this.dEQ.length;
 	}
 
-	public push(...item: T[]): void {
-		this.dEQ.push(...item);
+	public push(...items: T[]): void {
+		this.dEQ.push(...items);
 	}
 
-	public unshift(...item: T[]): void {
-		this.dEQ.unshift(...item);
+	public unshift(...items: T[]): void {
+		this.dEQ.unshift(...items);
 	}
 
 	public pop(count = 1): T {

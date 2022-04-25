@@ -14,11 +14,11 @@ class Deque {
     getLength() {
         return this.dEQ.length;
     }
-    push(...item) {
-        this.dEQ.push(...item);
+    push(...items) {
+        this.dEQ.push(...items);
     }
-    unshift(...item) {
-        this.dEQ.unshift(...item);
+    unshift(...items) {
+        this.dEQ.unshift(...items);
     }
     pop(count = 1) {
         assert(count >= 1);
