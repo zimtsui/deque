@@ -1,12 +1,8 @@
 import DEQ = require('double-ended-queue');
-import {
-	DequeLike,
-	ZeroElemPopped,
-} from './deque-like';
+import { DequeLike } from './deque-like';
 import {
 	Defined,
 	NoEnoughElem,
-	ZeroElemShifted,
 } from './queue-like';
 import {
 	RandomAccess,
@@ -38,42 +34,28 @@ export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
 		return this.dEQ.length;
 	}
 
-	public push(...items: T[]): void {
-		this.dEQ.push(...items);
+	public push(item: T): void {
+		this.dEQ.push(item);
 	}
 
-	public unshift(...items: T[]): void {
-		this.dEQ.unshift(...items);
+	public unshift(item: T): void {
+		this.dEQ.unshift(item);
 	}
 
-	public pop(count = 1): T {
+	public pop(): T {
 		assert(
-			count >= 1,
-			new ZeroElemPopped(),
-		);
-		assert(
-			count <= this.dEQ.length,
+			this.dEQ.length > 0,
 			new NoEnoughElem(),
 		);
-		const item = this.i(-1);
-		for (let i = 0; i < count; i++)
-			this.dEQ.pop();
-		return item;
+		return this.dEQ.pop()!;
 	}
 
-	public shift(count = 1): T {
+	public shift(): T {
 		assert(
-			count >= 1,
-			new ZeroElemShifted(),
-		);
-		assert(
-			count <= this.dEQ.length,
+			this.dEQ.length > 0,
 			new NoEnoughElem(),
 		);
-		const item = this.i(0);
-		for (let i = 0; i < count; i++)
-			this.dEQ.shift();
-		return item;
+		return this.dEQ.shift()!;
 	}
 
 	public [Symbol.iterator]() {

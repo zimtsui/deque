@@ -7,9 +7,9 @@ export declare class Deque<T extends Defined> implements DequeLike<T>, RandomAcc
     getFront(): T;
     i(index: number): T;
     getLength(): number;
-    push(...items: T[]): void;
-    unshift(...items: T[]): void;
-    pop(count?: number): T;
-    shift(count?: number): T;
+    push(item: T): void;
+    unshift(item: T): void;
+    pop(): T;
+    shift(): T;
     [Symbol.iterator](): IterableIterator<T>;
 }
