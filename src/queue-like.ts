@@ -6,3 +6,15 @@ export interface QueueLike<T extends Defined> extends Iterable<T> {
 	getLength(): number;
 	getFront(): T;
 }
+
+export class NoEnoughElem extends Error {
+	public constructor() {
+		super('No enough elements.');
+	}
+}
+
+export class ZeroElemShifted extends Error {
+	public constructor() {
+		super('Shift at least 1 element.');
+	}
+}

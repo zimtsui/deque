@@ -1,7 +1,17 @@
 import DEQ = require('double-ended-queue');
-import { DequeLike } from './deque-like';
-import { Defined } from './queue-like';
-import { RandomAccess } from './random-access';
+import {
+	DequeLike,
+	ZeroElemPopped,
+} from './deque-like';
+import {
+	Defined,
+	NoEnoughElem,
+	ZeroElemShifted,
+} from './queue-like';
+import {
+	RandomAccess,
+	IndexOutOfRange,
+} from './random-access';
 import assert = require('assert');
 
 
@@ -17,7 +27,10 @@ export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
 	}
 
 	public i(index: number): T {
-		assert(-this.dEQ.length <= index && index < this.dEQ.length);
+		assert(
+			-this.dEQ.length <= index && index < this.dEQ.length,
+			new IndexOutOfRange(),
+		);
 		return this.dEQ.get(index)!;
 	}
 
@@ -34,8 +47,14 @@ export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
 	}
 
 	public pop(count = 1): T {
-		assert(count >= 1);
-		assert(count <= this.dEQ.length);
+		assert(
+			count >= 1,
+			new ZeroElemPopped(),
+		);
+		assert(
+			count <= this.dEQ.length,
+			new NoEnoughElem(),
+		);
 		const item = this.i(-1);
 		for (let i = 0; i < count; i++)
 			this.dEQ.pop();
@@ -43,8 +62,14 @@ export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
 	}
 
 	public shift(count = 1): T {
-		assert(count >= 1);
-		assert(count <= this.dEQ.length);
+		assert(
+			count >= 1,
+			new ZeroElemShifted(),
+		);
+		assert(
+			count <= this.dEQ.length,
+			new NoEnoughElem(),
+		);
 		const item = this.i(0);
 		for (let i = 0; i < count; i++)
 			this.dEQ.shift();

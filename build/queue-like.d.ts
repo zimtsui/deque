@@ -5,3 +5,9 @@ export interface QueueLike<T extends Defined> extends Iterable<T> {
     getLength(): number;
     getFront(): T;
 }
+export declare class NoEnoughElem extends Error {
+    constructor();
+}
+export declare class ZeroElemShifted extends Error {
+    constructor();
+}

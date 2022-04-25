@@ -1,1 +1,1 @@
-{"version":3,"file":"queue-like.js","sourceRoot":"","sources":["../src/queue-like.ts"],"names":[],"mappings":""}
+{"version":3,"file":"queue-like.js","sourceRoot":"","sources":["../src/queue-like.ts"],"names":[],"mappings":";;;AASA,MAAa,YAAa,SAAQ,KAAK;IACtC;QACC,KAAK,CAAC,qBAAqB,CAAC,CAAC;IAC9B,CAAC;CACD;AAJD,oCAIC;AAED,MAAa,eAAgB,SAAQ,KAAK;IACzC;QACC,KAAK,CAAC,2BAA2B,CAAC,CAAC;IACpC,CAAC;CACD;AAJD,0CAIC"}

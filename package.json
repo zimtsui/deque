@@ -2,8 +2,8 @@
     "name": "deque",
     "version": "0.0.1",
     "description": "",
-    "main": "./build/deque.js",
-    "types": "./build/deque.d.ts",
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
     "scripts": {
         "test": "tsc -b ./test/src/tsconfig.json && ava",
         "build": "tsc -b ./src/tsconfig.json",
