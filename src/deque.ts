@@ -1,10 +1,11 @@
 import DEQ = require('double-ended-queue');
 import { DequeLike } from './deque-like';
 import { Defined } from './queue-like';
+import { RandomAccess } from './random-access';
 import assert = require('assert');
 
 
-export class Deque<T extends Defined> implements DequeLike<T>{
+export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
 	private dEQ: DEQ<T>;
 
 	public constructor(initials: Iterable<T> = []) {
