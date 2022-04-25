@@ -1,37 +1,44 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Deque = void 0;
-const UnderlyingDeque = require("double-ended-queue");
-var Deque;
-(function (Deque) {
-    function create(initial = []) {
-        const u = new UnderlyingDeque(initial);
-        const deque = ((i) => {
-            const item = u.get(i);
-            if (item !== undefined)
-                return item;
-            throw new Error('Invalid index');
-        });
-        deque.push = (...items) => void u.push(...items);
-        deque.pop = () => {
-            const item = u.pop();
-            if (item !== undefined)
-                return item;
-            throw new Error('Empty');
-        };
-        deque.shift = () => {
-            const item = u.shift();
-            if (item !== undefined)
-                return item;
-            throw new Error('Empty');
-        };
-        deque.unshift = (...items) => void u.unshift(...items);
-        deque[Symbol.iterator] = () => u.toArray()[Symbol.iterator]();
-        Reflect.defineProperty(deque, 'length', {
-            get: () => u.length,
-        });
-        return deque;
+const DEQ = require("double-ended-queue");
+const assert = require("assert");
+class Deque {
+    constructor(initials = []) {
+        this.dEQ = new DEQ([...initials]);
     }
-    Deque.create = create;
-})(Deque = exports.Deque || (exports.Deque = {}));
+    i(index) {
+        assert(-this.dEQ.length <= index && index < this.dEQ.length);
+        return this.dEQ.get(index);
+    }
+    getLength() {
+        return this.dEQ.length;
+    }
+    push(...item) {
+        this.dEQ.push(...item);
+    }
+    unshift(...item) {
+        this.dEQ.unshift(...item);
+    }
+    pop(count = 1) {
+        assert(count >= 1);
+        assert(count <= this.dEQ.length);
+        const item = this.i(-1);
+        for (let i = 0; i < count; i++)
+            this.dEQ.pop();
+        return item;
+    }
+    shift(count = 1) {
+        assert(count >= 1);
+        assert(count <= this.dEQ.length);
+        const item = this.i(0);
+        for (let i = 0; i < count; i++)
+            this.dEQ.shift();
+        return item;
+    }
+    [Symbol.iterator]() {
+        return this.dEQ.toArray()[Symbol.iterator]();
+    }
+}
+exports.Deque = Deque;
 //# sourceMappingURL=deque.js.map

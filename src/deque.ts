@@ -1,44 +1,52 @@
-import UnderlyingDeque = require('double-ended-queue');
+import DEQ = require('double-ended-queue');
+import { DequeLike } from './deque-like';
+import { Defined } from './queue-like';
+import assert = require('assert');
 
-export type ElementType = null | number | symbol | string | object;
 
-export interface QueueLike<T extends ElementType> extends Iterable<T> {
-    (index: number): T;
-    [Symbol.iterator]: () => Iterator<T>;
-    push(item: T): void;
-    shift(): T;
-    length: number;
-}
+export class Deque<T extends Defined> implements DequeLike<T>{
+	private dEQ: DEQ<T>;
 
-export interface DequeLike<T extends ElementType> extends QueueLike<T> {
-    pop(): T;
-    unshift(item: T): void;
-}
+	public constructor(initials: Iterable<T> = []) {
+		this.dEQ = new DEQ([...initials]);
+	}
 
-export namespace Deque {
-    export function create<T extends ElementType>(initial: T[] = []): DequeLike<T> {
-        const u = new UnderlyingDeque<T>(initial);
-        const deque = <DequeLike<T>>((i: number): T => {
-            const item = u.get(i);
-            if (item !== undefined) return item;
-            throw new Error('Invalid index');
-        });
-        deque.push = (...items: T[]) => void u.push(...items);
-        deque.pop = () => {
-            const item = u.pop();
-            if (item !== undefined) return item;
-            throw new Error('Empty');
-        }
-        deque.shift = () => {
-            const item = u.shift();
-            if (item !== undefined) return item;
-            throw new Error('Empty');
-        }
-        deque.unshift = (...items: T[]) => void u.unshift(...items);
-        deque[Symbol.iterator] = () => u.toArray()[Symbol.iterator]();
-        Reflect.defineProperty(deque, 'length', {
-            get: () => u.length,
-        });
-        return deque;
-    }
+	public i(index: number): T {
+		assert(-this.dEQ.length <= index && index < this.dEQ.length);
+		return this.dEQ.get(index)!;
+	}
+
+	public getLength(): number {
+		return this.dEQ.length;
+	}
+
+	public push(...item: T[]): void {
+		this.dEQ.push(...item);
+	}
+
+	public unshift(...item: T[]): void {
+		this.dEQ.unshift(...item);
+	}
+
+	public pop(count = 1): T {
+		assert(count >= 1);
+		assert(count <= this.dEQ.length);
+		const item = this.i(-1);
+		for (let i = 0; i < count; i++)
+			this.dEQ.pop();
+		return item;
+	}
+
+	public shift(count = 1): T {
+		assert(count >= 1);
+		assert(count <= this.dEQ.length);
+		const item = this.i(0);
+		for (let i = 0; i < count; i++)
+			this.dEQ.shift();
+		return item;
+	}
+
+	public [Symbol.iterator]() {
+		return this.dEQ.toArray()[Symbol.iterator]();
+	}
 }
