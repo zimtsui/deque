@@ -1,10 +1,7 @@
 import DEQ = require('double-ended-queue');
 import { DequeLike } from './deque-like';
-import { NoEnoughElem } from './queue-like';
-import {
-	RandomAccess,
-	IndexOutOfRange,
-} from './random-access';
+import { NoEnoughElem } from './fifo-like';
+import { RandomAccess } from './random-access';
 import assert = require('assert');
 
 
@@ -24,7 +21,7 @@ export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
 	public i(index: number): T {
 		assert(
 			-this.dEQ.length <= index && index < this.dEQ.length,
-			new IndexOutOfRange(),
+			new RangeError('Index is out of range.'),
 		);
 		return this.dEQ.get(index)!;
 	}

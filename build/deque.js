@@ -2,8 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Deque = void 0;
 const DEQ = require("double-ended-queue");
-const queue_like_1 = require("./queue-like");
-const random_access_1 = require("./random-access");
+const fifo_like_1 = require("./fifo-like");
 const assert = require("assert");
 class Deque {
     constructor(initials = []) {
@@ -13,7 +12,7 @@ class Deque {
         return this.i(0);
     }
     i(index) {
-        assert(-this.dEQ.length <= index && index < this.dEQ.length, new random_access_1.IndexOutOfRange());
+        assert(-this.dEQ.length <= index && index < this.dEQ.length, new RangeError('Index is out of range.'));
         return this.dEQ.get(index);
     }
     getLength() {
@@ -26,11 +25,11 @@ class Deque {
         this.dEQ.unshift(item);
     }
     pop() {
-        assert(this.dEQ.length > 0, new queue_like_1.NoEnoughElem());
+        assert(this.dEQ.length > 0, new fifo_like_1.NoEnoughElem());
         return this.dEQ.pop();
     }
     shift() {
-        assert(this.dEQ.length > 0, new queue_like_1.NoEnoughElem());
+        assert(this.dEQ.length > 0, new fifo_like_1.NoEnoughElem());
         return this.dEQ.shift();
     }
     [Symbol.iterator]() {

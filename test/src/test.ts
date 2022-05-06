@@ -1,8 +1,8 @@
 import { Deque } from '../..';
 import _ = require('lodash');
 import test from 'ava';
-import chai = require('chai');
-const { assert } = chai;
+import assert = require('assert');
+
 
 test.serial('test 1', t => {
     const q = new Deque<number>([1]);

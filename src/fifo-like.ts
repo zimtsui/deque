@@ -1,4 +1,3 @@
-
 export interface FifoLike<T> extends Iterable<T> {
 	push(item: T): void;
 	shift(): T;

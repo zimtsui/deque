@@ -3,8 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const __1 = require("../..");
 const _ = require("lodash");
 const ava_1 = require("ava");
-const chai = require("chai");
-const { assert } = chai;
+const assert = require("assert");
 ava_1.default.serial('test 1', t => {
     const q = new __1.Deque([1]);
     assert.deepStrictEqual([...q], [1]);

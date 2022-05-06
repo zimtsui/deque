@@ -12,10 +12,8 @@
     "author": "Zim",
     "license": "SEE LICENSE IN ./LICENSE",
     "devDependencies": {
-        "@types/chai": "^4.2.14",
         "@types/lodash": "^4.14.165",
         "ava": "^3.13.0",
-        "chai": "^4.2.0",
         "lodash": "^4.17.20"
     },
     "dependencies": {
