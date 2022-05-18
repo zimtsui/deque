@@ -22,7 +22,10 @@ class Destack {
     }
     pop() {
         assert(this.getSize() > 0, new RangeError());
-        return this.v.pop();
+        const x = this.v.pop();
+        if (this.front + this.front > this.v.length)
+            this.deflate();
+        return x;
     }
     shift() {
         assert(this.getSize() > 0, new RangeError());

@@ -33,7 +33,10 @@ export class Destack<T> implements Iterable<T> {
 			this.getSize() > 0,
 			new RangeError(),
 		);
-		return this.v.pop()!;
+		const x = this.v.pop()!;
+		if (this.front + this.front > this.v.length)
+			this.deflate();
+		return x;
 	}
 
 	public shift(): T {
