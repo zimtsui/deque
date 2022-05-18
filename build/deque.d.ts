@@ -1,7 +1,7 @@
 export declare class Deque<T> implements Iterable<T> {
     private left;
     private right;
-    constructor(initials: Iterable<T>);
+    constructor(initials?: Iterable<T>);
     push(x: T): void;
     pop(): T;
     shift(): T;

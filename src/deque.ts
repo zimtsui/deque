@@ -5,7 +5,7 @@ export class Deque<T> implements Iterable<T>{
 	private left = new Destack<T>();
 	private right: Destack<T>;
 
-	public constructor(initials: Iterable<T>) {
+	public constructor(initials?: Iterable<T>) {
 		this.right = new Destack(initials);
 	}
 
