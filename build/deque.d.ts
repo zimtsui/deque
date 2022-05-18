@@ -1,15 +1,12 @@
-import { DequeLike } from './deque-like';
-import { RandomAccess } from './random-access';
-export declare type Defined = null | number | symbol | string | object | boolean;
-export declare class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T> {
-    private dEQ;
-    constructor(initials?: Iterable<T>);
-    getFront(): T;
-    i(index: number): T;
-    getLength(): number;
-    push(item: T): void;
-    unshift(item: T): void;
+export declare class Deque<T> implements Iterable<T> {
+    private left;
+    private right;
+    constructor(initials: Iterable<T>);
+    push(x: T): void;
     pop(): T;
     shift(): T;
+    unshift(x: T): void;
+    getSize(): number;
+    i(index: number): T;
     [Symbol.iterator](): IterableIterator<T>;
 }

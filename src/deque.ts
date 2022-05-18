@@ -1,60 +1,66 @@
-import DEQ = require('double-ended-queue');
-import { DequeLike } from './deque-like';
-import { NoEnoughElem } from './fifo-like';
-import { RandomAccess } from './random-access';
-import assert = require('assert');
+import { Destack } from './destack';
 
 
-export type Defined = null | number | symbol | string | object | boolean;
+export class Deque<T> implements Iterable<T>{
+	private left = new Destack<T>();
+	private right: Destack<T>;
 
-export class Deque<T extends Defined> implements DequeLike<T>, RandomAccess<T>{
-	private dEQ: DEQ<T>;
-
-	public constructor(initials: Iterable<T> = []) {
-		this.dEQ = new DEQ([...initials]);
+	public constructor(initials: Iterable<T>) {
+		this.right = new Destack(initials);
 	}
 
-	public getFront(): T {
-		return this.i(0);
-	}
-
-	public i(index: number): T {
-		assert(
-			-this.dEQ.length <= index && index < this.dEQ.length,
-			new RangeError('Index is out of range.'),
-		);
-		return this.dEQ.get(index)!;
-	}
-
-	public getLength(): number {
-		return this.dEQ.length;
-	}
-
-	public push(item: T): void {
-		this.dEQ.push(item);
-	}
-
-	public unshift(item: T): void {
-		this.dEQ.unshift(item);
+	public push(x: T): void {
+		try {
+			this.left.unshift(x);
+		} catch (err) {
+			this.right.push(x);
+		}
 	}
 
 	public pop(): T {
-		assert(
-			this.dEQ.length > 0,
-			new NoEnoughElem(),
-		);
-		return this.dEQ.pop()!;
+		try {
+			return this.right.pop();
+		} catch (err) {
+			return this.left.shift();
+		}
 	}
 
 	public shift(): T {
-		assert(
-			this.dEQ.length > 0,
-			new NoEnoughElem(),
-		);
-		return this.dEQ.shift()!;
+		try {
+			return this.left.pop();
+		} catch (err) {
+			return this.right.shift();
+		}
+	}
+
+	public unshift(x: T): void {
+		try {
+			this.right.unshift(x);
+		} catch (err) {
+			this.left.push(x);
+		}
+	}
+
+	public getSize(): number {
+		return this.left.getSize() + this.right.getSize();
+	}
+
+	public i(index: number): T {
+		if (this.left.getSize() <= index && index < this.getSize())
+			return this.right.i(index - this.left.getSize());
+		if (0 <= index && index < this.left.getSize())
+			return this.left.i(this.left.getSize() - (index + 1));
+		if (-this.right.getSize() <= index && index < 0)
+			return this.right.i(this.right.getSize() + index);
+		if (-this.getSize() <= index && index < -this.right.getSize())
+			return this.left.i(-index - this.right.getSize() - 1);
+		throw new RangeError();
 	}
 
 	public [Symbol.iterator]() {
-		return this.dEQ.toArray()[Symbol.iterator]();
+		return [
+			...[...this.left].reverse(),
+			...this.right,
+		][Symbol.iterator]();
 	}
 }
