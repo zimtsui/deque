@@ -1,5 +1,9 @@
 # deque
 
-一个实现了负下标的双端队列。
+A double-ended queue with support for negative subscripts.
 
-不能使用 undefined 作为元素类型。
+## Comparison
+
+Why not [petkaantonov/deque](https://github.com/petkaantonov/deque)?
+
+Because it returns `undefined` rather than throws when range errors occur.

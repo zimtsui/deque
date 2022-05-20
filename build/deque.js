@@ -15,6 +15,9 @@ class Deque {
             this.right.push(x);
         }
     }
+    /**
+     * @throws {@link RangeError}
+     */
     pop() {
         try {
             return this.right.pop();
@@ -23,6 +26,9 @@ class Deque {
             return this.left.shift();
         }
     }
+    /**
+     * @throws {@link RangeError}
+     */
     shift() {
         try {
             return this.left.pop();
@@ -42,6 +48,11 @@ class Deque {
     getSize() {
         return this.left.getSize() + this.right.getSize();
     }
+    /**
+     * Get the element at a specified index.
+     * @param index - Can be negative.
+     * @throws {@link RangeError}
+     */
     i(index) {
         if (this.left.getSize() <= index && index < this.getSize())
             return this.right.i(index - this.left.getSize());
@@ -53,6 +64,10 @@ class Deque {
             return this.left.i(-index - this.right.getSize() - 1);
         throw new RangeError();
     }
+    /**
+     * Time complexity of O(n).
+     * @returns An iterator of a copy of the entire queue.
+     */
     [Symbol.iterator]() {
         return [
             ...[...this.left].reverse(),

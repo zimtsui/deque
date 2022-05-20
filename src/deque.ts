@@ -19,6 +19,9 @@ export class Deque<T> implements Iterable<T>{
 		}
 	}
 
+	/**
+	 * @throws {@link RangeError}
+	 */
 	public pop(): T {
 		try {
 			return this.right.pop();
@@ -27,6 +30,9 @@ export class Deque<T> implements Iterable<T>{
 		}
 	}
 
+	/**
+	 * @throws {@link RangeError}
+	 */
 	public shift(): T {
 		try {
 			return this.left.pop();
@@ -47,6 +53,11 @@ export class Deque<T> implements Iterable<T>{
 		return this.left.getSize() + this.right.getSize();
 	}
 
+	/**
+	 * Get the element at a specified index.
+	 * @param index - Can be negative.
+	 * @throws {@link RangeError}
+	 */
 	public i(index: number): T {
 		if (this.left.getSize() <= index && index < this.getSize())
 			return this.right.i(index - this.left.getSize());
@@ -59,6 +70,10 @@ export class Deque<T> implements Iterable<T>{
 		throw new RangeError();
 	}
 
+	/**
+	 * Time complexity of O(n).
+	 * @returns An iterator of a copy of the entire queue.
+	 */
 	public [Symbol.iterator]() {
 		return [
 			...[...this.left].reverse(),
