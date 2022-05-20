@@ -56,7 +56,7 @@ export class Deque<T> implements Iterable<T>{
 	/**
 	 * Get the element at a specified index.
 	 * @param index - Can be negative.
-	 * @throws {@link RangeError}
+	 * @throws RangeError
 	 */
 	public i(index: number): T {
 		if (this.left.getSize() <= index && index < this.getSize())

@@ -16,7 +16,7 @@ export declare class Deque<T> implements Iterable<T> {
     /**
      * Get the element at a specified index.
      * @param index - Can be negative.
-     * @throws {@link RangeError}
+     * @throws RangeError
      */
     i(index: number): T;
     /**

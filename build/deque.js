@@ -51,7 +51,7 @@ class Deque {
     /**
      * Get the element at a specified index.
      * @param index - Can be negative.
-     * @throws {@link RangeError}
+     * @throws RangeError
      */
     i(index) {
         if (this.left.getSize() <= index && index < this.getSize())
