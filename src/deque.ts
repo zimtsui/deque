@@ -20,7 +20,7 @@ export class Deque<T> implements Iterable<T>{
 	}
 
 	/**
-	 * @throws {@link RangeError}
+	 * @throws RangeError
 	 */
 	public pop(): T {
 		try {
@@ -31,7 +31,7 @@ export class Deque<T> implements Iterable<T>{
 	}
 
 	/**
-	 * @throws {@link RangeError}
+	 * @throws RangeError
 	 */
 	public shift(): T {
 		try {

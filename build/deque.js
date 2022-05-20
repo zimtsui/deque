@@ -16,7 +16,7 @@ class Deque {
         }
     }
     /**
-     * @throws {@link RangeError}
+     * @throws RangeError
      */
     pop() {
         try {
@@ -27,7 +27,7 @@ class Deque {
         }
     }
     /**
-     * @throws {@link RangeError}
+     * @throws RangeError
      */
     shift() {
         try {

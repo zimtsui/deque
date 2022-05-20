@@ -4,11 +4,11 @@ export declare class Deque<T> implements Iterable<T> {
     constructor(initials?: Iterable<T>);
     push(x: T): void;
     /**
-     * @throws {@link RangeError}
+     * @throws RangeError
      */
     pop(): T;
     /**
-     * @throws {@link RangeError}
+     * @throws RangeError
      */
     shift(): T;
     unshift(x: T): void;
