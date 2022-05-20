@@ -7,12 +7,9 @@ export class Destack<T> implements Iterable<T> {
 	private front = 0;
 
 	public constructor(
-		initials?: Iterable<T>,
+		initials: Iterable<T> = [],
 	) {
-		if (typeof initials !== 'undefined')
-			this.v = [...initials];
-		else
-			this.v = [];
+		this.v = [...initials];
 	}
 
 	private deflate(): void {

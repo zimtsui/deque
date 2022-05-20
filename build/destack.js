@@ -3,12 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Destack = void 0;
 const assert = require("assert");
 class Destack {
-    constructor(initials) {
+    constructor(initials = []) {
         this.front = 0;
-        if (typeof initials !== 'undefined')
-            this.v = [...initials];
-        else
-            this.v = [];
+        this.v = [...initials];
     }
     deflate() {
         this.v = this.v.slice(this.front);

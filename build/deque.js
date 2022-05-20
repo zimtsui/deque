@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Deque = void 0;
 const destack_1 = require("./destack");
 class Deque {
-    constructor(initials) {
+    constructor(initials = []) {
         this.left = new destack_1.Destack();
         this.right = new destack_1.Destack(initials);
     }
