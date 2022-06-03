@@ -7,7 +7,7 @@ export class Destack<T> implements Iterable<T> {
 	private front = 0;
 
 	public constructor(
-		initials: Iterable<T> = [],
+		initials: Iterable<T>,
 	) {
 		this.v = [...initials];
 	}
@@ -55,10 +55,11 @@ export class Destack<T> implements Iterable<T> {
 		this.v[--this.front] = x;
 	}
 
-	/**
-	 * unsafe
-	 */
-	public i(index: number): T {
+	public at(index: number): T {
+		assert(
+			0 <= index && index < this.getSize(),
+			new RangeError(),
+		);
 		return this.v[this.front + index];
 	}
 

@@ -1,8 +1,8 @@
 import { Destack } from './destack';
 
 
-export class Deque<T> implements Iterable<T>{
-	private left = new Destack<T>();
+export class Deque<T> implements Iterable<T> {
+	private left = new Destack<T>([]);
 	private right: Destack<T>;
 
 	public constructor(
@@ -55,19 +55,28 @@ export class Deque<T> implements Iterable<T>{
 
 	/**
 	 * Get the element at a specified index.
+	 * @param index - Can't be negative.
+	 * @throws RangeError
+	 */
+	public at(index: number): T {
+		try {
+			return this.left.at(this.left.getSize() - index - 1);
+		} catch (err) {
+			return this.right.at(index - this.left.getSize());
+		}
+	}
+
+	/**
+	 * Get the element at a specified index.
 	 * @param index - Can be negative.
 	 * @throws RangeError
 	 */
 	public i(index: number): T {
-		if (this.left.getSize() <= index && index < this.getSize())
-			return this.right.i(index - this.left.getSize());
-		if (0 <= index && index < this.left.getSize())
-			return this.left.i(this.left.getSize() - (index + 1));
-		if (-this.right.getSize() <= index && index < 0)
-			return this.right.i(this.right.getSize() + index);
-		if (-this.getSize() <= index && index < -this.right.getSize())
-			return this.left.i(-index - this.right.getSize() - 1);
-		throw new RangeError();
+		try {
+			return this.at(index);
+		} catch (err) {
+			return this.at(this.getSize() + index);
+		}
 	}
 
 	/**

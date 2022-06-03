@@ -15,6 +15,12 @@ export declare class Deque<T> implements Iterable<T> {
     getSize(): number;
     /**
      * Get the element at a specified index.
+     * @param index - Can't be negative.
+     * @throws RangeError
+     */
+    at(index: number): T;
+    /**
+     * Get the element at a specified index.
      * @param index - Can be negative.
      * @throws RangeError
      */

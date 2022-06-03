@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Destack = void 0;
 const assert = require("assert");
 class Destack {
-    constructor(initials = []) {
+    constructor(initials) {
         this.front = 0;
         this.v = [...initials];
     }
@@ -35,10 +35,8 @@ class Destack {
         assert(this.front > 0, new RangeError());
         this.v[--this.front] = x;
     }
-    /**
-     * unsafe
-     */
-    i(index) {
+    at(index) {
+        assert(0 <= index && index < this.getSize(), new RangeError());
         return this.v[this.front + index];
     }
     [Symbol.iterator]() {
