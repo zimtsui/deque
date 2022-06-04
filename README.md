@@ -1,5 +1,7 @@
 # deque
 
+[![Npm package version](https://badgen.net/npm/v/@zimtsui/deque)](https://www.npmjs.com/package/@zimtsui/deque)
+
 A double-ended queue with support for negative subscripts.
 
 ## Comparison
