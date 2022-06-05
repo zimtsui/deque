@@ -79,6 +79,18 @@ export class Deque<T> implements Iterable<T> {
 		}
 	}
 
+	public slice(
+		start = 0,
+		end = this.getSize(),
+	): T[] {
+		if (start < 0) start += this.getSize();
+		if (end < 0) end += this.getSize();
+		const r: T[] = [];
+		for (let i = start; i < end; i++)
+			r.push(this.at(i));
+		return r;
+	}
+
 	/**
 	 * Time complexity of O(n).
 	 * @returns An iterator of a copy of the entire queue.

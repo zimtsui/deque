@@ -74,6 +74,16 @@ class Deque {
             return this.at(this.getSize() + index);
         }
     }
+    slice(start = 0, end = this.getSize()) {
+        if (start < 0)
+            start += this.getSize();
+        if (end < 0)
+            end += this.getSize();
+        const r = [];
+        for (let i = start; i < end; i++)
+            r.push(this.at(i));
+        return r;
+    }
     /**
      * Time complexity of O(n).
      * @returns An iterator of a copy of the entire queue.

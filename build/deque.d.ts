@@ -25,6 +25,7 @@ export declare class Deque<T> implements Iterable<T> {
      * @throws RangeError
      */
     i(index: number): T;
+    slice(start?: number, end?: number): T[];
     /**
      * Time complexity of O(n).
      * @returns An iterator of a copy of the entire queue.
