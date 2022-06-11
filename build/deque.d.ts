@@ -30,5 +30,5 @@ export declare class Deque<T> implements Iterable<T> {
      * Time complexity of O(n).
      * @returns An iterator of a copy of the entire queue.
      */
-    [Symbol.iterator](): IterableIterator<T>;
+    [Symbol.iterator](): Iterator<T>;
 }

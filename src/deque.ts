@@ -95,7 +95,7 @@ export class Deque<T> implements Iterable<T> {
 	 * Time complexity of O(n).
 	 * @returns An iterator of a copy of the entire queue.
 	 */
-	public [Symbol.iterator]() {
+	public [Symbol.iterator](): Iterator<T> {
 		return [
 			...[...this.left].reverse(),
 			...this.right,

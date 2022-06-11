@@ -11,4 +11,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./deque"), exports);
+__exportStar(require("./iterable-deque"), exports);
 //# sourceMappingURL=index.js.map
