@@ -12,6 +12,6 @@ Because it returns `undefined` rather than throws when range errors occur, and i
 
 ## Time complexity
 
-- push/pop/shift/unshift: O(1) on average
+- push/pop/shift/unshift: amortized O(1)
 - random access: O(1)
 - get iterator: O(1)
