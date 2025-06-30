@@ -1,11 +1,7 @@
-# nodejs
 /node_modules
-
-# source
 /src
 
-# typedoc
 /docs
 
-# test
 /test
+/ava.config.mjs

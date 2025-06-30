@@ -60,6 +60,9 @@ export class Deque<T> implements Iterable<T> {
 		return index < this.left.getSize() ? this.left.at(-index-1) : this.right.at(index-this.left.getSize());
 	}
 
+	/**
+	 * @throws RangeError
+	 */
 	public slice(begin = 0, end = this.getSize()): T[] {
 		if ((begin = offsetting(begin, this.getSize())) <= (end = offsetting(end, this.getSize()))) {} else throw new RangeError();
 		const r: T[] = [];

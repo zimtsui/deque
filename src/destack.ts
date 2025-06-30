@@ -1,6 +1,6 @@
 import { offsetting } from './offsetting.ts';
 
-export class Destack<T> implements Iterable<T> {
+export class Destack<T> {
 	private v: T[];
 	private front = 0;
 
@@ -54,9 +54,5 @@ export class Destack<T> implements Iterable<T> {
 	 */
 	public at(index: number): T {
 		return this.v[this.front+offsetting(index, this.getSize())]!;
-	}
-
-	public [Symbol.iterator]() {
-		return this.v.slice(this.front)[Symbol.iterator]();
 	}
 }
