@@ -1,15 +1,14 @@
-import { FifoStack } from './fifo-stack.ts';
-import { type DequeLike } from './interfaces.ts';
 import { offsetting } from './offsetting.ts';
+import { type StackLike, type FifoLike } from './interfaces.ts';
 
 
-export class Deque<T> implements DequeLike<T> {
-	private left = new FifoStack<T>([]);
-	private right: FifoStack<T>;
+export class FifoStack<T> implements StackLike<T>, FifoLike<T> {
+	private v: T[];
+	private front = 0;
 	readonly [index: number]: T;
 
 	public constructor(initials: Iterable<T> = []) {
-		this.right = new FifoStack(initials);
+		this.v = [...initials];
 		return new Proxy(this, {
 			get: (target, prop, receiver) => {
 				if (typeof prop === 'string' && Number.isSafeInteger(Number.parseInt(prop, 10)))
@@ -20,46 +19,50 @@ export class Deque<T> implements DequeLike<T> {
 		});
 	}
 
+	private tryDeflate(): void {
+		if (this.front + this.front > this.v.length) {
+			this.v = this.v.slice(this.front);
+			this.front = 0;
+		}
+	}
+
 	public pushBack(x: T): void {
-		this.right.pushBack(x);
+		this.v.push(x);
+	}
+
+	public get length(): number {
+		return this.v.length - this.front;
 	}
 
 	/**
 	 * @throws RangeError
 	 */
 	public popBack(): T {
-		try {
-			return this.right.popBack();
-		} catch (err) {
-			return this.left.popFront();
-		}
+		if (this.length) {} else throw new RangeError();
+		const x = this.v.pop()!;
+		this.tryDeflate();
+		return x;
 	}
 
 	/**
 	 * @throws RangeError
 	 */
 	public popFront(): T {
-		try {
-			return this.left.popBack();
-		} catch (err) {
-			return this.right.popFront();
-		}
-	}
-
-	public pushFront(x: T): void {
-		this.left.pushBack(x);
-	}
-
-	public get length(): number {
-		return this.left.length + this.right.length;
+		if (this.length) {} else throw new RangeError();
+		const x = this.v[this.front++]!;
+		this.tryDeflate();
+		return x;
 	}
 
 	/**
 	 * @throws RangeError
 	 */
 	public at(index: number): T {
-		index = offsetting(index, this.length);
-		return index < this.left.length ? this.left[-index-1]! : this.right[index-this.left.length]!;
+		return this.v[this.front+offsetting(index, this.length)]!;
+	}
+
+	public *[Symbol.iterator](): Generator<T, void, void> {
+		for (let i = 0; i < this.length; i++) yield this[i]!;
 	}
 
 	/**
@@ -70,9 +73,5 @@ export class Deque<T> implements DequeLike<T> {
 		const r: T[] = [];
 		for (let i = begin; i < end; i++) r.push(this[i]!);
 		return r;
-	}
-
-	public *[Symbol.iterator](): Generator<T, void, void> {
-		for (let i = 0; i < this.length; i++) yield this[i]!;
 	}
 }
