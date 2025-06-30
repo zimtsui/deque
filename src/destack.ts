@@ -1,14 +1,10 @@
-import assert = require('assert');
-
-
+import { offsetting } from './offsetting.ts';
 
 export class Destack<T> implements Iterable<T> {
 	private v: T[];
 	private front = 0;
 
-	public constructor(
-		initials: Iterable<T>,
-	) {
+	public constructor(initials: Iterable<T> = []) {
 		this.v = [...initials];
 	}
 
@@ -17,7 +13,7 @@ export class Destack<T> implements Iterable<T> {
 		this.front = 0;
 	}
 
-	public push(x: T): void {
+	public pushBack(x: T): void {
 		this.v.push(x);
 	}
 
@@ -25,42 +21,39 @@ export class Destack<T> implements Iterable<T> {
 		return this.v.length - this.front;
 	}
 
-	public pop(): T {
-		assert(
-			this.getSize() > 0,
-			new RangeError(),
-		);
+	/**
+	 * @throws RangeError
+	 */
+	public popBack(): T {
+		if (this.getSize()) {} else throw new RangeError();
 		const x = this.v.pop()!;
-		if (this.front + this.front > this.v.length)
-			this.deflate();
+		if (this.front + this.front > this.v.length) this.deflate();
 		return x;
 	}
 
-	public shift(): T {
-		assert(
-			this.getSize() > 0,
-			new RangeError(),
-		);
-		const x = this.v[this.front++];
-		if (this.front + this.front > this.v.length)
-			this.deflate();
+	/**
+	 * @throws RangeError
+	 */
+	public popFront(): T {
+		if (this.getSize()) {} else throw new RangeError();
+		const x = this.v[this.front++]!;
+		if (this.front + this.front > this.v.length) this.deflate();
 		return x;
 	}
 
-	public unshift(x: T): void {
-		assert(
-			this.front > 0,
-			new RangeError(),
-		);
+	/**
+	 * @throws RangeError
+	 */
+	public pushFront(x: T): void {
+		if (this.front > 0) {} else throw new RangeError();
 		this.v[--this.front] = x;
 	}
 
+	/**
+	 * @throws RangeError
+	 */
 	public at(index: number): T {
-		assert(
-			0 <= index && index < this.getSize(),
-			new RangeError(),
-		);
-		return this.v[this.front + index];
+		return this.v[this.front+offsetting(index, this.getSize())]!;
 	}
 
 	public [Symbol.iterator]() {

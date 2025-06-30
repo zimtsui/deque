@@ -1,51 +1,50 @@
-import { Destack } from './destack';
+import { Destack } from './destack.ts';
+import { offsetting } from './offsetting.ts';
 
 
 export class Deque<T> implements Iterable<T> {
 	private left = new Destack<T>([]);
 	private right: Destack<T>;
 
-	public constructor(
-		initials: Iterable<T> = [],
-	) {
+	public constructor(initials: Iterable<T> = []) {
 		this.right = new Destack(initials);
 	}
 
-	public push(x: T): void {
+	public pushBack(x: T): void {
 		try {
-			this.left.unshift(x);
+			this.left.pushFront(x);
 		} catch (err) {
-			this.right.push(x);
+			this.right.pushBack(x);
 		}
 	}
 
 	/**
 	 * @throws RangeError
 	 */
-	public pop(): T {
+	public popBack(): T {
 		try {
-			return this.right.pop();
+			return this.right.popBack();
 		} catch (err) {
-			return this.left.shift();
+			return this.left.popFront();
 		}
 	}
 
 	/**
 	 * @throws RangeError
 	 */
-	public shift(): T {
+	public popFront(): T {
 		try {
-			return this.left.pop();
+			return this.left.popBack();
 		} catch (err) {
-			return this.right.shift();
+			return this.right.popFront();
 		}
 	}
 
-	public unshift(x: T): void {
+	public pushFront(x: T): void {
 		try {
-			this.right.unshift(x);
+			this.right.pushFront(x);
 		} catch (err) {
-			this.left.push(x);
+			this.left.pushBack(x);
 		}
 	}
 
@@ -54,51 +53,21 @@ export class Deque<T> implements Iterable<T> {
 	}
 
 	/**
-	 * Get the element at a specified index.
-	 * @param index - Can't be negative.
 	 * @throws RangeError
 	 */
 	public at(index: number): T {
-		try {
-			return this.left.at(this.left.getSize() - index - 1);
-		} catch (err) {
-			return this.right.at(index - this.left.getSize());
-		}
+		index = offsetting(index, this.getSize());
+		return index < this.left.getSize() ? this.left.at(-index-1) : this.right.at(index-this.left.getSize());
 	}
 
-	/**
-	 * Get the element at a specified index.
-	 * @param index - Can be negative.
-	 * @throws RangeError
-	 */
-	public i(index: number): T {
-		try {
-			return this.at(index);
-		} catch (err) {
-			return this.at(this.getSize() + index);
-		}
-	}
-
-	public slice(
-		start = 0,
-		end = this.getSize(),
-	): T[] {
-		if (start < 0) start += this.getSize();
-		if (end < 0) end += this.getSize();
+	public slice(begin = 0, end = this.getSize()): T[] {
+		if ((begin = offsetting(begin, this.getSize())) <= (end = offsetting(end, this.getSize()))) {} else throw new RangeError();
 		const r: T[] = [];
-		for (let i = start; i < end; i++)
-			r.push(this.at(i));
+		for (let i = begin; i < end; i++) r.push(this.at(i));
 		return r;
 	}
 
-	/**
-	 * Time complexity of O(n).
-	 * @returns An iterator of a copy of the entire queue.
-	 */
-	public [Symbol.iterator](): Iterator<T> {
-		return [
-			...[...this.left].reverse(),
-			...this.right,
-		][Symbol.iterator]();
+	public *[Symbol.iterator](): Generator<T, void, void> {
+		for (let i = 0; i < this.getSize(); i++) yield this.at(i);
 	}
 }

@@ -1,99 +1,71 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Deque = void 0;
-const destack_1 = require("./destack");
-class Deque {
+import { Destack } from "./destack.js";
+import { offsetting } from "./offsetting.js";
+export class Deque {
+    left = new Destack([]);
+    right;
     constructor(initials = []) {
-        this.left = new destack_1.Destack([]);
-        this.right = new destack_1.Destack(initials);
+        this.right = new Destack(initials);
     }
-    push(x) {
+    pushBack(x) {
         try {
-            this.left.unshift(x);
+            this.left.pushFront(x);
         }
         catch (err) {
-            this.right.push(x);
-        }
-    }
-    /**
-     * @throws RangeError
-     */
-    pop() {
-        try {
-            return this.right.pop();
-        }
-        catch (err) {
-            return this.left.shift();
+            this.right.pushBack(x);
         }
     }
     /**
      * @throws RangeError
      */
-    shift() {
+    popBack() {
         try {
-            return this.left.pop();
+            return this.right.popBack();
         }
         catch (err) {
-            return this.right.shift();
+            return this.left.popFront();
         }
     }
-    unshift(x) {
+    /**
+     * @throws RangeError
+     */
+    popFront() {
         try {
-            this.right.unshift(x);
+            return this.left.popBack();
         }
         catch (err) {
-            this.left.push(x);
+            return this.right.popFront();
+        }
+    }
+    pushFront(x) {
+        try {
+            this.right.pushFront(x);
+        }
+        catch (err) {
+            this.left.pushBack(x);
         }
     }
     getSize() {
         return this.left.getSize() + this.right.getSize();
     }
     /**
-     * Get the element at a specified index.
-     * @param index - Can't be negative.
      * @throws RangeError
      */
     at(index) {
-        try {
-            return this.left.at(this.left.getSize() - index - 1);
-        }
-        catch (err) {
-            return this.right.at(index - this.left.getSize());
-        }
+        index = offsetting(index, this.getSize());
+        return index < this.left.getSize() ? this.left.at(-index - 1) : this.right.at(index - this.left.getSize());
     }
-    /**
-     * Get the element at a specified index.
-     * @param index - Can be negative.
-     * @throws RangeError
-     */
-    i(index) {
-        try {
-            return this.at(index);
-        }
-        catch (err) {
-            return this.at(this.getSize() + index);
-        }
-    }
-    slice(start = 0, end = this.getSize()) {
-        if (start < 0)
-            start += this.getSize();
-        if (end < 0)
-            end += this.getSize();
+    slice(begin = 0, end = this.getSize()) {
+        if ((begin = offsetting(begin, this.getSize())) <= (end = offsetting(end, this.getSize()))) { }
+        else
+            throw new RangeError();
         const r = [];
-        for (let i = start; i < end; i++)
+        for (let i = begin; i < end; i++)
             r.push(this.at(i));
         return r;
     }
-    /**
-     * Time complexity of O(n).
-     * @returns An iterator of a copy of the entire queue.
-     */
-    [Symbol.iterator]() {
-        return [
-            ...[...this.left].reverse(),
-            ...this.right,
-        ][Symbol.iterator]();
+    *[Symbol.iterator]() {
+        for (let i = 0; i < this.getSize(); i++)
+            yield this.at(i);
     }
 }
-exports.Deque = Deque;
 //# sourceMappingURL=deque.js.map

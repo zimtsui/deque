@@ -1,47 +1,61 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Destack = void 0;
-const assert = require("assert");
-class Destack {
-    constructor(initials) {
-        this.front = 0;
+import { offsetting } from "./offsetting.js";
+export class Destack {
+    v;
+    front = 0;
+    constructor(initials = []) {
         this.v = [...initials];
     }
     deflate() {
         this.v = this.v.slice(this.front);
         this.front = 0;
     }
-    push(x) {
+    pushBack(x) {
         this.v.push(x);
     }
     getSize() {
         return this.v.length - this.front;
     }
-    pop() {
-        assert(this.getSize() > 0, new RangeError());
+    /**
+     * @throws RangeError
+     */
+    popBack() {
+        if (this.getSize()) { }
+        else
+            throw new RangeError();
         const x = this.v.pop();
         if (this.front + this.front > this.v.length)
             this.deflate();
         return x;
     }
-    shift() {
-        assert(this.getSize() > 0, new RangeError());
+    /**
+     * @throws RangeError
+     */
+    popFront() {
+        if (this.getSize()) { }
+        else
+            throw new RangeError();
         const x = this.v[this.front++];
         if (this.front + this.front > this.v.length)
             this.deflate();
         return x;
     }
-    unshift(x) {
-        assert(this.front > 0, new RangeError());
+    /**
+     * @throws RangeError
+     */
+    pushFront(x) {
+        if (this.front > 0) { }
+        else
+            throw new RangeError();
         this.v[--this.front] = x;
     }
+    /**
+     * @throws RangeError
+     */
     at(index) {
-        assert(0 <= index && index < this.getSize(), new RangeError());
-        return this.v[this.front + index];
+        return this.v[this.front + offsetting(index, this.getSize())];
     }
     [Symbol.iterator]() {
         return this.v.slice(this.front)[Symbol.iterator]();
     }
 }
-exports.Destack = Destack;
 //# sourceMappingURL=destack.js.map
